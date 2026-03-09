@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Quiz - Software Engineering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div class="header-content">
+                <h1>Metodi e Tecnologie</h1>
+                <div class="stats-pills">
+                    <span id="counter">Domanda 1/106</span>
+                    <span id="score" class="score-pill">Punti: 0</span>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+        </header>
+
+        <main id="quiz-card" class="card">
+            <div id="question-type" class="type-badge">Risposta Singola</div>
+            <h2 id="question-text">Caricamento domande...</h2>
+
+            <div id="options-container" class="options-list">
+            </div>
+
+            <div class="action-area">
+                <button id="submit-btn" class="btn primary">Verifica</button>
+                <button id="next-btn" class="btn secondary hidden">Continua</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

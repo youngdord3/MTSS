@@ -1,0 +1,341 @@
+[
+  {
+    "question": "Quali sono le caratteristiche dell'utilizzo di un server fisico?",
+    "options": [
+      "tempi di deploy lenti",
+      "spreca risorse",
+      "non spreca risorse",
+      "isola le applicazioni in ambienti indipendenti",
+      "è complicato ospitare più applicazioni sullo stesso sistema operativo",
+      "esegue più sistemi operativi su uno stesso server fisico",
+      "costoso"
+    ],
+    "correct": [
+      0,
+      1,
+      4,
+      6
+    ],
+    "multiple": true
+  },
+  {
+    "question": "Quali tra le seguenti affermazioni relative alla Continuous Delivery NON è vera?",
+    "options": [
+      "È fondamentale utilizzare lo stesso script per effettuare il rilascio in differenti ambienti.",
+      "In questo modo lo script di rilascio sarà più solido perché verrà verificato maggiormente.",
+      "Per realizzare questa pratica è consigliato avere un repository dove rilasciare gli artefatti...",
+      "Il processo di build per la produzione dei binari deve essere eseguito più volte (una per ogni artefatto dove verrà rilasciato il prodotto).",
+      "Eseguire il processo di build solo una volta garantisce di utilizzare lo stesso artefatto..."
+    ],
+    "correct": [
+      3
+    ],
+    "multiple": false
+  },
+  {
+    "question": "Quale evento del framework SCRUM si celebra dopo la Sprint Review e prima del prossimo Sprint Planning, valutando ciò che funziona e non funziona?",
+    "options": [
+      "Sprint review",
+      "Sprint retrospective",
+      "Daily scrum"
+    ],
+    "correct": [
+      1
+    ],
+    "multiple": false
+  },
+  {
+    "question": "Quale frase descrive la Build Automation?",
+    "options": [
+      "automazione del software distribuibile che include: analisi dei requisiti, versionamento del codice e documentazione finale.",
+      "creazione automatica di un software distribuibile tramite: compilazione del codice sorgente, il packaging dei file binari e l'esecuzione di test.",
+      "creazione automatica di un software tramite: scrittura del codice, modifica manuale dei file binari e verifica dell'interfaccia grafica.",
+      "distribuzione automatica del software tramite: debug del codice, conversione in PDF dei file di progetto e caricamento manuale sul server."
+    ],
+    "correct": [
+      1
+    ],
+    "multiple": false
+  },
+  {
+    "question": "Cosa fa VMware?",
+    "options": [
+      "funzionano con un docker",
+      "dimensiona ogni VM con le risorse necessarie",
+      "non utilizza l'hypervisor",
+      "permette di monitorare continuamente lo stato di ogni VM",
+      "crea e configura VM",
+      "centralizza il controllo su tutte le VM esistenti"
+    ],
+    "correct": [
+      1,
+      3,
+      4,
+      5
+    ],
+    "multiple": true
+  },
+  {
+    "question": "A quali categorie appartengono i test di unità?",
+    "options": [
+      "Verifica",
+      "Statico",
+      "Funzionale",
+      "Non funzionale",
+      "Validazione",
+      "Dinamico",
+      "Il SUT è considerato white box",
+      "Il SUT è considerato black box"
+    ],
+    "correct": [
+      0,
+      2,
+      5,
+      6
+    ],
+    "multiple": true
+  },
+  {
+    "question": "Quale tra le seguenti è la definizione migliore per Analisi statica del codice?",
+    "options": [
+      "È un analisi di un computer software che viene effettuata senza richiedere l'esecuzione del programma.",
+      "Verifica il comportamento di una funzionalità atomica di un programma.",
+      "È un analisi di un computer software che viene effettuata manualmente (senza automatismi) in un programma in esecuzione.",
+      "È l'attività che ha l'obiettivo di verificare se sono rispettati i contratti di interfaccia tra più moduli o sub-system."
+    ],
+    "correct": [
+      0
+    ],
+    "multiple": false
+  },
+  {
+    "question": "Quale tra queste tipologie di VCS è il più utilizzato?",
+    "options": [
+      "Local VCS",
+      "Distribuited VCS",
+      "Centralized VCS"
+    ],
+    "correct": [
+      1
+    ],
+    "multiple": false
+  },
+  {
+    "question": "Nel framework SCRUM, quale tra i seguenti NON è un ruolo del Product Owner?",
+    "options": [
+      "È Responsabile dell'adozione dei valori e delle pratiche SCRUM.",
+      "Definisce le priorità delle caratteristiche del prodotto in base al valore che il mercato gli attribuisce.",
+      "Rappresenta il desiderio del committente.",
+      "Definisce le caratteristiche del prodotto."
+    ],
+    "correct": [
+      0
+    ],
+    "multiple": false
+  },
+  {
+    "question": "Quali tra queste sono caratteristiche di Jenkins?",
+    "options": [
+      "adatto a progetti di piccola/media scala",
+      "è scalabile orizzontalmente con nodi di build distribuiti...",
+      "viene configurato con jankinsfile",
+      "viene configurato con file YAML",
+      "si integra con vari sistemi di controllo del codice sorgente",
+      "consente esecuzioni parallele, ma con limitazioni dovute all'infrastruttura ospitante",
+      "è scalabile automaticamente, ma con risorse limitate",
+      "consente esecuzioni parallele sfruttando infrastrutture di calcolo distribuite",
+      "si integra nativamente con GitHub",
+      "adatto a progetti complessi"
+    ],
+    "correct": [
+      1,
+      2,
+      4,
+      7,
+      9
+    ],
+    "multiple": true
+  },
+  {
+    "question": "Quali sono i componenti di input e output in un processo di build?",
+    "options": [
+      "input: file di build, codice di produzione, documentazione, librerie, codice di test. Output: documentazione, prodotto, librerie.",
+      "Input: codice di produzione, codice di test, immagini dell'interfaccia, file README. Output: pacchetto eseguibile, file log, backup del repository.",
+      "Input: codice sorgente, file di configurazione dell'ambiente, ticket di sviluppo, librerie esterne. Output: eseguibile, log di compilazione, changelog, ambienti di test.",
+      "Input: codice sorgente, script di deploy, file di configurazione del sistema, librerie condivise. Output: artefatti intermedi, script di test, container Docker."
+    ],
+    "correct": [
+      0
+    ],
+    "multiple": false
+  },
+  {
+    "question": "Quale delle seguenti affermazioni NON è corretta sulla Definition of Done (DOD)?",
+    "options": [
+      "Il suo superamento porta automaticamente l'attività in close.",
+      "Viene utilizzata per verificare oggettivamente se un'attività è completata.",
+      "Può variare in base al gruppo di lavoro.",
+      "Definisce il criterio minimo affinché uno Sprint Item sia ritenuto \"fatto\".",
+      "Deve esser condivisa tra tutto il team."
+    ],
+    "correct": [
+      0
+    ],
+    "multiple": false
+  },
+  {
+    "question": "Quali sono le caratteristiche di Ansible?",
+    "options": [
+      "Un controller può lanciare comandi sulle macchine gestite.",
+      "i playbook sono insiemi di task e handler.",
+      "i playbook sono scritti in XML.",
+      "non è possibile utilizzare Windows.",
+      "una task agisce in conseguenza ad un evento handler.",
+      "una macchina può fare da nodo gestito solo se ha Ansible installato.",
+      "la singola unità è della handler.",
+      "per Linux richiede Python > 2.6 e SSH.",
+      "un computer con Ansible installato può fare da controller.",
+      "è leggero",
+      "è pesante",
+      "i playbook sono solo insiemi di task.",
+      "i playbook sono scritti in YAML.",
+      "un handler agisce in conseguenza ad un evento task.",
+      "i server presso cui ansible può operare sono in una lista chiamata inventory.",
+      "la singola unità è detta task."
+    ],
+    "correct": [
+      0,
+      1,
+      7,
+      8,
+      9,
+      12,
+      13,
+      14,
+      15
+    ],
+    "multiple": true
+  },
+  {
+    "question": "Concetti relativi al work item:",
+    "options": [
+      "attività minima del progetto",
+      "presenta stati",
+      "permette di avere una visione d'insieme del progetto",
+      "diverse priorità",
+      "permette di visualizzare più task insieme",
+      "relativo ad un progetto",
+      "codice univoco (ID)",
+      "presenta il percorso di vita di un task in tutte le sue fasi",
+      "presenta stime in tempo",
+      "insieme di stati e transizioni",
+      "presenta informazioni sulle date (apertura, possibile rilascio)",
+      "diverse tipologie"
+    ],
+    "correct": [
+      0,
+      1,
+      3,
+      5,
+      6,
+      8,
+      10,
+      11
+    ],
+    "multiple": true
+  },
+  {
+    "question": "Quali sono le caratteristiche di un'immutable infrastructure?",
+    "options": [
+      "mantiene sempre la stessa istanza",
+      "semplice da gestire",
+      "non è semplice \"tornare indietro\"",
+      "è veloce",
+      "viene costruita una nuova immagine ad ogni aggiornamento di configurazione",
+      "si riduce il rischio di drift",
+      "rischia drift",
+      "è lento"
+    ],
+    "correct": [
+      4,
+      5,
+      7
+    ],
+    "multiple": true
+  },
+  {
+    "question": "Cosa si intende per \"tracciabilità\" nella Configuration Management?",
+    "options": [
+      "ogni componente dell'ambiente viene aggiornato automaticamente quando cambia una dipendenza.",
+      "impedire che versioni differenti dello stesso ambiente vengano create accidentalmente.",
+      "vedere le dipendenze utilizzate per creare un ambiente e confrontare due versioni diverse di uno stesso ambiente per vederne le differenze."
+    ],
+    "correct": [
+      2
+    ],
+    "multiple": false
+  },
+  {
+    "question": "Concetti relativi al Workflow:",
+    "options": [
+      "insieme di stati e transazioni che un work item attraversa durante il suo ciclo di vita.",
+      "insieme di stati e priorità che un work item attraversa durante il suo ciclo di vita.",
+      "permette di implementare un processo da seguire per registrare il lavoro svolto in un work item.",
+      "permette di implementare un processo da seguire per completare l'attività rappresentata da un work item."
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "multiple": true
+  },
+  {
+    "question": "Quale delle seguenti affermazioni è FALSA riguardo ai repository remoti in Maven?",
+    "options": [
+      "Le librerie scaricate da repository remoti sono sempre sicure e verificate.",
+      "Possono contenere librerie open-source e plugin.",
+      "Le aziende spesso usano repository locali per motivi di sicurezza.",
+      "Possono essere pubblici o privati."
+    ],
+    "correct": [
+      0
+    ],
+    "multiple": false
+  },
+  {
+    "question": "Quali sono le caratteristiche di un container?",
+    "options": [
+      "non necessita di un hypervisor",
+      "necessita di un hypervisor",
+      "è più veloce delle VM",
+      "è un'istanza di esecuzione di un'applicazione completamente isolata",
+      "sa com'è configurato l'ambiente circostante",
+      "virtualizza l'hardware",
+      "gira nel kernel della macchina host",
+      "i container sono isolati tra loro e anche dall'host stesso",
+      "virtualizza il sistema operativo"
+    ],
+    "correct": [
+      0,
+      2,
+      3,
+      6,
+      7,
+      8
+    ],
+    "multiple": true
+  },
+  {
+    "question": "Quale tra questi analizza il codice sorgente statico per trovare difetti di programmazione quali: variabili inutilizzate, blocchi catch vuoti...?",
+    "options": [
+      "Checkstyle",
+      "PMD",
+      "Findbugs",
+      "SonarQube"
+    ],
+    "correct": [
+      1
+    ],
+    "multiple": false
+  }
+]
