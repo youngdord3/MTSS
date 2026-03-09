@@ -1,11 +1,21 @@
 let questions = [];
 let currentQuestionIndex = 0;
 let score = 0;
-let correctAnswersCount = 0; // Per la schermata finale
-let wrongAnswersCount = 0;   // Per la schermata finale
+let correctAnswersCount = 0;
+let wrongAnswersCount = 0;
 let selectedIndices = [];
 
-// Elementi DOM aggiuntivi
+// Elementi
+const questionText = document.getElementById('question-text');
+const optionsContainer = document.getElementById('options-container');
+const submitBtn = document.getElementById('submit-btn');
+const nextBtn = document.getElementById('next-btn');
+const progress = document.getElementById('progress-bar');
+const counter = document.getElementById('counter');
+const scoreDisplay = document.getElementById('score');
+const typeBadge = document.getElementById('question-type');
+
+// Elementi per i risultati
 const quizCard = document.getElementById('quiz-card');
 const resultCard = document.getElementById('result-card');
 const correctDisplay = document.getElementById('correct-count');
