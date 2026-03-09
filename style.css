@@ -215,9 +215,6 @@ h2 {
 }
 
 /* Stile circolare per singola, quadrato per multipla */
-.single-choice .option::before {
-    border-radius: 50%;
-}
 
 .multi-choice .option::before {
     border-radius: 4px;

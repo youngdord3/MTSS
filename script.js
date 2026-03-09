@@ -100,8 +100,6 @@ submitBtn.onclick = () => {
         correctAnswersCount++;
     } else {
         wrongAnswersCount++;
-        quizCard.classList.add('shake');
-        setTimeout(() => quizCard.classList.remove('shake'), 400);
         // Salviamo l'errore per la revisione
         userErrors.push({
             question: q.question,
