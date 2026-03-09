@@ -26,15 +26,31 @@
         <main id="quiz-card" class="card">
             <div id="question-type" class="type-badge">Risposta Singola</div>
             <h2 id="question-text">Caricamento domande...</h2>
-
-            <div id="options-container" class="options-list">
-            </div>
-
+            <div id="options-container" class="options-list"></div>
             <div class="action-area">
                 <button id="submit-btn" class="btn primary">Verifica</button>
                 <button id="next-btn" class="btn secondary hidden">Continua</button>
             </div>
         </main>
+
+        <div id="result-card" class="card hidden">
+            <h2>Quiz Completato!</h2>
+            <div class="results-stats">
+                <div class="stat-item">
+                    <span class="label">Corrette</span>
+                    <span id="correct-count" class="value success-text">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="label">Errate</span>
+                    <span id="wrong-count" class="value error-text">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="label">Punteggio Finale</span>
+                    <span id="final-score" class="value">0</span>
+                </div>
+            </div>
+            <button id="restart-btn" class="btn primary">Ricomincia Quiz</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

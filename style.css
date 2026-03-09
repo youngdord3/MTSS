@@ -82,3 +82,51 @@ h2 { font-size: 1.4rem; line-height: 1.4; margin: 0 0 25px 0; font-weight: 500; 
 .secondary { background: var(--border); color: white; margin-top: 10px; }
 
 .hidden { display: none; }
+
+/* Animazione Shake per errore */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-8px); }
+    50% { transform: translateX(8px); }
+    75% { transform: translateX(-8px); }
+}
+.shake { animation: shake 0.4s ease-in-out; }
+
+/* Indicatori Risposta Multipla/Singola */
+.option::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--border);
+    margin-right: 15px;
+    flex-shrink: 0;
+    transition: all 0.2s;
+}
+
+/* Stile circolare per singola, quadrato per multipla */
+.single-choice .option::before { border-radius: 50%; }
+.multi-choice .option::before { border-radius: 4px; }
+
+.option.selected::before {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    box-shadow: inset 0 0 0 3px var(--option-bg);
+}
+
+/* Schermata Risultati */
+.results-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.stat-item {
+    background: var(--bg-color);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+}
+.stat-item .label { display: block; font-size: 0.8rem; color: var(--text-dim); margin-bottom: 5px; }
+.stat-item .value { font-size: 1.5rem; font-weight: bold; }
+.success-text { color: var(--success); }
+.error-text { color: var(--error); }

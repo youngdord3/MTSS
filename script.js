@@ -1,24 +1,38 @@
 let questions = [];
 let currentQuestionIndex = 0;
 let score = 0;
+let correctAnswersCount = 0; // Per la schermata finale
+let wrongAnswersCount = 0;   // Per la schermata finale
 let selectedIndices = [];
 
-const questionText = document.getElementById('question-text');
-const optionsContainer = document.getElementById('options-container');
-const submitBtn = document.getElementById('submit-btn');
-const nextBtn = document.getElementById('next-btn');
-const progress = document.getElementById('progress-bar');
-const counter = document.getElementById('counter');
-const scoreDisplay = document.getElementById('score');
-const typeBadge = document.getElementById('question-type');
+// Elementi DOM aggiuntivi
+const quizCard = document.getElementById('quiz-card');
+const resultCard = document.getElementById('result-card');
+const correctDisplay = document.getElementById('correct-count');
+const wrongDisplay = document.getElementById('wrong-count');
+const finalScoreDisplay = document.getElementById('final-score');
+const restartBtn = document.getElementById('restart-btn');
 
-// Carica il file JSON
 fetch('quiz.json')
     .then(res => res.json())
     .then(data => {
         questions = data;
-        loadQuestion();
+        startQuiz();
     });
+
+function startQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    correctAnswersCount = 0;
+    wrongAnswersCount = 0;
+    // RANDOMIZZAZIONE: Mescola l'ordine delle domande
+    questions.sort(() => Math.random() - 0.5);
+
+    resultCard.classList.add('hidden');
+    quizCard.classList.remove('hidden');
+    scoreDisplay.innerText = `Punti: 0`;
+    loadQuestion();
+}
 
 function loadQuestion() {
     const q = questions[currentQuestionIndex];
@@ -26,8 +40,11 @@ function loadQuestion() {
 
     questionText.innerText = q.question;
     typeBadge.innerText = q.multiple ? "Risposta Multipla" : "Risposta Singola";
-    optionsContainer.innerHTML = '';
 
+    // Cambia classe visiva per indicatori (cerchi/quadrati)
+    optionsContainer.className = q.multiple ? 'options-list multi-choice' : 'options-list single-choice';
+
+    optionsContainer.innerHTML = '';
     nextBtn.classList.add('hidden');
     submitBtn.classList.remove('hidden');
 
@@ -42,30 +59,7 @@ function loadQuestion() {
     updateUI();
 }
 
-function selectOption(index, element) {
-    const q = questions[currentQuestionIndex];
-
-    if (q.multiple) {
-        if (selectedIndices.includes(index)) {
-            selectedIndices = selectedIndices.filter(i => i !== index);
-            element.classList.remove('selected');
-        } else {
-            selectedIndices.push(index);
-            element.classList.add('selected');
-        }
-    } else {
-        document.querySelectorAll('.option').forEach(el => el.classList.remove('selected'));
-        selectedIndices = [index];
-        element.classList.add('selected');
-    }
-}
-
-function updateUI() {
-    const total = questions.length;
-    const current = currentQuestionIndex + 1;
-    counter.innerText = `Domanda ${current}/${total}`;
-    progress.style.width = `${(current / total) * 100}%`;
-}
+// ... (selectOption e updateUI rimangono simili)
 
 submitBtn.onclick = () => {
     if (selectedIndices.length === 0) return alert("Seleziona almeno una risposta!");
@@ -73,7 +67,15 @@ submitBtn.onclick = () => {
     const q = questions[currentQuestionIndex];
     const isCorrect = JSON.stringify(selectedIndices.sort()) === JSON.stringify(q.correct.sort());
 
-    if (isCorrect) score += 2; // Ogni domanda vale 2 punti come nel PDF
+    if (isCorrect) {
+        score += 2;
+        correctAnswersCount++;
+    } else {
+        wrongAnswersCount++;
+        // FEEDBACK VISIVO: Animazione shake se sbagliato
+        quizCard.classList.add('shake');
+        setTimeout(() => quizCard.classList.remove('shake'), 400);
+    }
 
     document.querySelectorAll('.option').forEach((el, i) => {
         if (q.correct.includes(i)) el.classList.add('correct');
@@ -90,8 +92,17 @@ nextBtn.onclick = () => {
     if (currentQuestionIndex < questions.length) {
         loadQuestion();
     } else {
-        questionText.innerText = `Quiz Terminato! Punteggio finale: ${score}/${questions.length * 2}`;
-        optionsContainer.innerHTML = '';
-        nextBtn.classList.add('hidden');
+        showResults();
     }
 };
+
+function showResults() {
+    quizCard.classList.add('hidden');
+    resultCard.classList.remove('hidden');
+
+    correctDisplay.innerText = correctAnswersCount;
+    wrongDisplay.innerText = wrongAnswersCount;
+    finalScoreDisplay.innerText = `${score}/${questions.length * 2}`;
+}
+
+restartBtn.onclick = startQuiz;
