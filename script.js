@@ -322,7 +322,12 @@ submitBtn.onclick = () => {
         updatePersistentBadge();
     }
 
+    // Lock options so they can't be clicked after submitting
+    optionsContainer.classList.add('answered');
+
     document.querySelectorAll('.option').forEach((el, i) => {
+        // Remove selected state so only correct/wrong colors show
+        el.classList.remove('selected');
         if (q.correct.includes(i)) el.classList.add('correct');
         else if (selectedIndices.includes(i)) el.classList.add('wrong');
     });
