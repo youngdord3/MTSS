@@ -16,7 +16,11 @@
       4,
       6
     ],
-    "multiple": true
+    "multiple": true,
+    "tags": [
+      "Infrastruttura"
+    ],
+    "explanation": "Un server fisico è dedicato a una singola applicazione: i deploy sono lenti perché richiedono configurazione manuale, spreca risorse poiché non le condivide, è costoso in acquisto e manutenzione, e ospitare più app sullo stesso OS è complicato per i conflitti di dipendenze."
   },
   {
     "question": "Quali tra le seguenti affermazioni relative alla Continuous Delivery NON è vera?",
@@ -30,7 +34,11 @@
     "correct": [
       3
     ],
-    "multiple": false
+    "multiple": false,
+    "tags": [
+      "CI/CD"
+    ],
+    "explanation": "In Continuous Delivery il principio fondamentale è 'build once, deploy many': il binario viene prodotto una sola volta e promosso tra gli ambienti. Rieseguire la build per ogni ambiente rompe la garanzia che lo stesso artefatto sia stato testato end-to-end."
   },
   {
     "question": "Quale evento del framework SCRUM si celebra dopo la Sprint Review e prima del prossimo Sprint Planning, valutando ciò che funziona e non funziona?",
@@ -42,7 +50,11 @@
     "correct": [
       1
     ],
-    "multiple": false
+    "multiple": false,
+    "tags": [
+      "SCRUM"
+    ],
+    "explanation": "La Sprint Retrospective è l'ultimo evento dello sprint: il team riflette sui processi, strumenti e relazioni interni per migliorare continuamente. Avviene dopo la Sprint Review (che guarda il prodotto) e prima del nuovo Sprint Planning."
   },
   {
     "question": "Quale frase descrive la Build Automation?",
@@ -55,7 +67,11 @@
     "correct": [
       1
     ],
-    "multiple": false
+    "multiple": false,
+    "tags": [
+      "CI/CD"
+    ],
+    "explanation": "La Build Automation automatizza le fasi ripetibili e verificabili: compilazione del sorgente, packaging dei binari ed esecuzione della suite di test. L'obiettivo è eliminare gli errori umani e rendere il processo riproducibile."
   },
   {
     "question": "Cosa fa VMware?",
@@ -73,7 +89,11 @@
       4,
       5
     ],
-    "multiple": true
+    "multiple": true,
+    "tags": [
+      "Virtualizzazione"
+    ],
+    "explanation": "VMware è una piattaforma di virtualizzazione basata su hypervisor che permette di creare e configurare VM, dimensionarle con le risorse necessarie, monitorarne lo stato e centralizzare la gestione di tutte le VM da un'unica console (vCenter)."
   },
   {
     "question": "A quali categorie appartengono i test di unità?",
@@ -93,7 +113,11 @@
       5,
       6
     ],
-    "multiple": true
+    "multiple": true,
+    "tags": [
+      "Testing"
+    ],
+    "explanation": "I test di unità sono: Verifica (controllano che il codice rispetti la specifica tecnica), Funzionali (testano una funzionalità specifica), Dinamici (richiedono l'esecuzione del codice) e White box (il tester conosce l'implementazione interna del SUT)."
   },
   {
     "question": "Quale tra le seguenti è la definizione migliore per Analisi statica del codice?",
@@ -106,7 +130,11 @@
     "correct": [
       0
     ],
-    "multiple": false
+    "multiple": false,
+    "tags": [
+      "Testing"
+    ],
+    "explanation": "L'analisi statica esamina il codice sorgente senza eseguirlo (strumenti come PMD, Checkstyle, SonarQube). Permette di trovare bug, code smell e violazioni di stile in fase di sviluppo, prima ancora che il software venga avviato."
   },
   {
     "question": "Quale tra queste tipologie di VCS è il più utilizzato?",
@@ -118,7 +146,11 @@
     "correct": [
       1
     ],
-    "multiple": false
+    "multiple": false,
+    "tags": [
+      "Version Control"
+    ],
+    "explanation": "I DVCS (Distributed VCS) come Git sono i più usati perché ogni sviluppatore ha una copia completa del repository. Questo consente di lavorare offline, fa branch/merge efficienti e non ha un single point of failure come i VCS centralizzati."
   },
   {
     "question": "Nel framework SCRUM, quale tra i seguenti NON è un ruolo del Product Owner?",
@@ -131,7 +163,11 @@
     "correct": [
       0
     ],
-    "multiple": false
+    "multiple": false,
+    "tags": [
+      "SCRUM"
+    ],
+    "explanation": "Il responsabile dell'adozione dei valori e delle pratiche SCRUM è lo Scrum Master, non il Product Owner. Il PO è invece responsabile del Product Backlog, della prioritizzazione e della visione del prodotto verso il committente."
   },
   {
     "question": "Quali tra queste sono caratteristiche di Jenkins?",
@@ -154,7 +190,11 @@
       7,
       9
     ],
-    "multiple": true
+    "multiple": true,
+    "tags": [
+      "CI/CD"
+    ],
+    "explanation": "Jenkins è un server CI/CD open source adatto a progetti complessi: usa il Jenkinsfile (Groovy DSL) per la configurazione, supporta agent distribuiti per esecuzioni parallele su infrastrutture di calcolo distribuite, e si integra con quasi tutti i VCS tramite plugin."
   },
   {
     "question": "Quali sono i componenti di input e output in un processo di build?",
@@ -167,7 +207,11 @@
     "correct": [
       0
     ],
-    "multiple": false
+    "multiple": false,
+    "tags": [
+      "CI/CD"
+    ],
+    "explanation": "Il processo di build prende in input tutto il necessario per produrre il software (sorgenti, file di build come pom.xml/Makefile, librerie, test) e produce in output gli artefatti distribuibili (documentazione generata, il prodotto compilato/packaged, librerie pubblicate)."
   },
   {
     "question": "Quale delle seguenti affermazioni NON è corretta sulla Definition of Done (DOD)?",
@@ -181,7 +225,11 @@
     "correct": [
       0
     ],
-    "multiple": false
+    "multiple": false,
+    "tags": [
+      "SCRUM"
+    ],
+    "explanation": "La DoD non chiude automaticamente un task: è una checklist condivisa che definisce i criteri minimi di completamento. Il passaggio a 'closed' richiede una verifica esplicita da parte del team, non avviene in modo automatico al semplice soddisfacimento della DoD."
   },
   {
     "question": "Quali sono le caratteristiche di Ansible?",
@@ -214,7 +262,11 @@
       14,
       15
     ],
-    "multiple": true
+    "multiple": true,
+    "tags": [
+      "Configuration Management"
+    ],
+    "explanation": "Ansible è agentless e leggero: i nodi gestiti non necessitano di Ansible installato (bastano Python e SSH per Linux). I playbook sono scritti in YAML e composti da task e handler. Un handler viene eseguito solo se notificato da una task (es. riavvio servizio dopo modifica config). L'inventory elenca i server gestiti."
   },
   {
     "question": "Concetti relativi al work item:",
@@ -242,7 +294,11 @@
       10,
       11
     ],
-    "multiple": true
+    "multiple": true,
+    "tags": [
+      "Project Management"
+    ],
+    "explanation": "Un work item è l'unità atomica di lavoro in un progetto: ha un ID univoco, appartiene a un progetto, presenta stati, priorità, tipologie (bug, feature, task), stime temporali e date (apertura/rilascio). Non descrive il percorso di vita (quello è il workflow) né fornisce una visione d'insieme (quello è la board/dashboard)."
   },
   {
     "question": "Quali sono le caratteristiche di un'immutable infrastructure?",
@@ -261,7 +317,11 @@
       5,
       7
     ],
-    "multiple": true
+    "multiple": true,
+    "tags": [
+      "Configuration Management"
+    ],
+    "explanation": "In un'infrastruttura immutabile non si modificano i server esistenti: ad ogni cambiamento si costruisce una nuova immagine e si sostituisce l'istanza. Questo elimina il configuration drift (le istanze sono sempre identiche all'immagine) ma il processo di rebuild è più lento rispetto a una modifica in-place."
   },
   {
     "question": "Cosa si intende per \"tracciabilità\" nella Configuration Management?",
@@ -273,7 +333,11 @@
     "correct": [
       2
     ],
-    "multiple": false
+    "multiple": false,
+    "tags": [
+      "Configuration Management"
+    ],
+    "explanation": "La tracciabilità in CM significa poter risalire a come è stato costruito un ambiente (quali versioni di dipendenze, script, configurazioni) e confrontare due versioni per individuare le differenze (diff). È fondamentale per il debugging e per gli audit."
   },
   {
     "question": "Concetti relativi al Workflow:",
@@ -287,7 +351,11 @@
       0,
       3
     ],
-    "multiple": true
+    "multiple": true,
+    "tags": [
+      "Project Management"
+    ],
+    "explanation": "Il Workflow definisce gli stati e le transizioni (non le priorità) che un work item attraversa nel suo ciclo di vita (es. New → In Progress → Review → Done). Implementa il processo da seguire per completare un'attività, non solo per registrarla."
   },
   {
     "question": "Quale delle seguenti affermazioni è FALSA riguardo ai repository remoti in Maven?",
@@ -300,7 +368,11 @@
     "correct": [
       0
     ],
-    "multiple": false
+    "multiple": false,
+    "tags": [
+      "Build Tools"
+    ],
+    "explanation": "I repository remoti (come Maven Central) non garantiscono sicurezza assoluta: esistono casi di dependency confusion e supply chain attack. Per questo le aziende usano repository privati (Nexus, Artifactory) dove le librerie vengono scansionate prima di essere rese disponibili internamente."
   },
   {
     "question": "Quali sono le caratteristiche di un container?",
@@ -323,7 +395,11 @@
       7,
       8
     ],
-    "multiple": true
+    "multiple": true,
+    "tags": [
+      "Container"
+    ],
+    "explanation": "I container condividono il kernel dell'host (non virtualizzano l'hardware come le VM) quindi non necessitano di hypervisor e sono più veloci da avviare. Virtualizzano il sistema operativo tramite namespace e cgroups. Ogni container è isolato dagli altri e dall'host, e non conosce l'ambiente circostante."
   },
   {
     "question": "Quale tra questi analizza il codice sorgente statico per trovare difetti di programmazione quali: variabili inutilizzate, blocchi catch vuoti...?",
@@ -336,6 +412,10 @@
     "correct": [
       1
     ],
-    "multiple": false
+    "multiple": false,
+    "tags": [
+      "Testing"
+    ],
+    "explanation": "PMD analizza il sorgente Java (e altri linguaggi) per trovare difetti come variabili inutilizzate, blocchi catch vuoti, codice irraggiungibile e altri code smell. Checkstyle verifica le convenzioni di stile, Findbugs analizza il bytecode per trovare bug potenziali, SonarQube è una piattaforma che integra più analizzatori."
   }
 ]

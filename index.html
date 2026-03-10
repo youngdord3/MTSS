@@ -10,6 +10,7 @@
 
 <body>
     <div class="app-container">
+
         <header>
             <div class="header-content">
                 <h1>Metodi e Tecnologie</h1>
@@ -23,24 +24,66 @@
             </div>
         </header>
 
-        <!-- Banner modalità allenamento -->
+        <!-- ── SETUP SCREEN ─────────────────────────────────────────────────── -->
+        <div id="setup-card" class="card">
+            <h2 class="setup-title">Configura il Quiz</h2>
+
+            <section class="setup-section">
+                <label class="setup-label">📂 Categorie</label>
+                <p class="setup-hint">Seleziona gli argomenti da includere</p>
+                <div id="tags-container" class="tags-grid"></div>
+                <div class="tag-actions">
+                    <button id="select-all-btn" class="btn-link">Seleziona tutte</button>
+                    <button id="deselect-all-btn" class="btn-link">Deseleziona tutte</button>
+                </div>
+            </section>
+
+            <section class="setup-section">
+                <label class="setup-label">🔢 Numero di domande</label>
+                <div class="count-row">
+                    <input type="range" id="question-count-slider" min="5" max="20" value="20" step="1">
+                    <span id="count-display" class="count-badge">20</span>
+                </div>
+                <p class="setup-hint">Disponibili con i filtri attuali: <strong id="available-count">20</strong></p>
+            </section>
+
+            <div id="setup-error" class="setup-error hidden">⚠️ Seleziona almeno una categoria.</div>
+
+            <div class="setup-actions">
+                <button id="start-quiz-btn" class="btn primary">▶ Inizia Quiz</button>
+                <button id="start-training-setup-btn" class="btn training">🔁 Allena Errori <span
+                        id="errors-count-badge" class="errors-badge hidden"></span></button>
+            </div>
+        </div>
+
+        <!-- ── TRAINING BANNER ──────────────────────────────────────────────── -->
         <div id="training-banner" class="training-banner hidden">
             🔁 Modalità Allenamento — stai ripassando i tuoi errori precedenti
         </div>
 
-        <main id="quiz-card" class="card">
-            <div id="question-type" class="type-badge">Risposta Singola</div>
+        <!-- ── QUIZ CARD ────────────────────────────────────────────────────── -->
+        <main id="quiz-card" class="card hidden">
+            <div class="quiz-card-meta">
+                <div id="question-type" class="type-badge">Risposta Singola</div>
+                <div id="question-tag" class="tag-pill"></div>
+            </div>
             <h2 id="question-text">Caricamento domande...</h2>
             <div id="options-container" class="options-list"></div>
+
+            <div id="explanation-box" class="explanation-box hidden">
+                <span class="explanation-icon">💡</span>
+                <p id="explanation-text"></p>
+            </div>
+
             <div class="action-area">
                 <button id="submit-btn" class="btn primary">Verifica</button>
-                <button id="next-btn" class="btn secondary hidden">Continua</button>
+                <button id="next-btn" class="btn secondary hidden">Continua →</button>
             </div>
         </main>
 
+        <!-- ── RESULT CARD ──────────────────────────────────────────────────── -->
         <div id="result-card" class="card hidden">
             <h2>Quiz Completato!</h2>
-
             <p id="result-message" class="result-message"></p>
 
             <div class="results-stats">
@@ -58,7 +101,6 @@
                 </div>
             </div>
 
-            <!-- Badge errori persistenti -->
             <div id="persistent-errors-badge" class="persistent-badge hidden"></div>
 
             <button id="review-btn" class="btn secondary hidden">Rivedi Errori</button>
@@ -67,10 +109,10 @@
             <div class="result-actions">
                 <button id="restart-btn" class="btn primary">🔄 Nuovo Quiz</button>
                 <button id="training-btn" class="btn training hidden">🔁 Allena gli Errori</button>
-                <button id="clear-errors-btn" class="btn danger-outline hidden-on-zero">🗑 Cancella Errori
-                    Salvati</button>
+                <button id="clear-errors-btn" class="btn danger-outline">🗑 Cancella Errori Salvati</button>
             </div>
         </div>
+
     </div>
     <script src="script.js"></script>
 </body>
