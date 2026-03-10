@@ -146,10 +146,10 @@ h2 {
     background: #1e293b;
 }
 
-/* Selected state: subtle highlight, no blue border/shadow */
 .option.selected {
-    border-color: #475569;
-    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent);
+    background: rgba(59, 130, 246, 0.1);
+    box-shadow: 0 0 0 1px var(--accent);
 }
 
 .option.correct {
@@ -186,10 +186,10 @@ h2 {
     border-radius: 4px;
 }
 
-/* Selected indicator: neutral fill */
+/* Selected indicator: blue fill */
 .option.selected::before {
-    background-color: #475569;
-    border-color: #475569;
+    background-color: var(--accent);
+    border-color: var(--accent);
     box-shadow: inset 0 0 0 3px var(--option-bg);
 }
 
