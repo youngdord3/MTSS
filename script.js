@@ -62,7 +62,12 @@ function savePersistedErrors(errors) {
 function mergeErrors(newErrors) {
     const stored = loadPersistedErrors();
     newErrors.forEach(err => {
-        if (!stored.find(e => e.question === err.question)) stored.push(err);
+        const existing = stored.find(e => e.question === err.question);
+        if (!existing) {
+            stored.push(err);
+        } else {
+            existing.consecutiveCorrects = 0;
+        }
     });
     savePersistedErrors(stored);
 }
@@ -288,7 +293,19 @@ function loadQuestion() {
     nextBtn.classList.add('hidden');
     submitBtn.classList.remove('hidden');
 
-    q.options.forEach((opt, i) => {
+    // Shuffle logic
+    let optionsWithIndices = q.options.map((text, idx) => ({ text, originalIdx: idx }));
+    optionsWithIndices.sort(() => Math.random() - 0.5);
+    
+    q._currentShuffledOptions = optionsWithIndices.map(o => o.text);
+    q._currentShuffledCorrect = [];
+    optionsWithIndices.forEach((o, newIdx) => {
+        if (q.correct.includes(o.originalIdx)) {
+            q._currentShuffledCorrect.push(newIdx);
+        }
+    });
+
+    q._currentShuffledOptions.forEach((opt, i) => {
         const div = document.createElement('div');
         div.className = 'option';
         div.innerText = opt;
@@ -332,21 +349,48 @@ submitBtn.onclick = () => {
     }
 
     const q = questions[currentQuestionIndex];
-    const isCorrect = answersEqual(selectedIndices, q.correct);
+    const isCorrect = answersEqual(selectedIndices, q._currentShuffledCorrect);
 
     if (isCorrect) {
         score += 2;
         correctAnswersCount++;
-        if (isTrainingMode) { removeFromPersistedErrors(q.question); updatePersistentBadge(); }
+        if (isTrainingMode) {
+            const stored = loadPersistedErrors();
+            const err = stored.find(e => e.question === q.question);
+            if (err) {
+                err.consecutiveCorrects = (err.consecutiveCorrects || 0) + 1;
+                if (err.consecutiveCorrects >= 2) {
+                    removeFromPersistedErrors(q.question);
+                } else {
+                    savePersistedErrors(stored);
+                }
+            }
+            updatePersistentBadge();
+        }
     } else {
         wrongAnswersCount++;
+        if (isTrainingMode) {
+            const stored = loadPersistedErrors();
+            const err = stored.find(e => e.question === q.question);
+            if (err) {
+                err.consecutiveCorrects = 0;
+                savePersistedErrors(stored);
+            }
+        }
+        
+        const originalUserChoices = selectedIndices.map(idx => {
+            const originalText = q._currentShuffledOptions[idx];
+            return q.options.indexOf(originalText);
+        });
+
         const errEntry = {
             question: q.question,
             options: q.options,
             correct: q.correct,
-            userChoices: [...selectedIndices],
+            userChoices: originalUserChoices,
             tags: q.tags || [],
-            explanation: q.explanation || ''
+            explanation: q.explanation || '',
+            consecutiveCorrects: 0
         };
         userErrors.push(errEntry);
         mergeErrors([errEntry]);
@@ -359,7 +403,7 @@ submitBtn.onclick = () => {
     document.querySelectorAll('.option').forEach((el, i) => {
         // Remove selected state so only correct/wrong colors show
         el.classList.remove('selected');
-        if (q.correct.includes(i)) el.classList.add('correct');
+        if (q._currentShuffledCorrect.includes(i)) el.classList.add('correct');
         else if (selectedIndices.includes(i)) el.classList.add('wrong');
     });
 
@@ -444,3 +488,11 @@ clearErrorsBtn.onclick = () => {
         trainingBtn.classList.add('hidden');
     }
 };
+
+// ─── BEFORE UNLOAD (Prevent data loss) ────────────────────────────────────────
+window.addEventListener('beforeunload', (e) => {
+    if (setupCard.classList.contains('hidden') && resultCard.classList.contains('hidden')) {
+        e.preventDefault();
+        e.returnValue = '';
+    }
+});
