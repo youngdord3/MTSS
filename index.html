@@ -29,6 +29,15 @@
             <h2 class="setup-title">Configura il Quiz</h2>
 
             <section class="setup-section">
+                <label class="setup-label">📚 Sezione</label>
+                <p class="setup-hint">Seleziona quali tipi di domande includere</p>
+                <div class="tags-grid" style="margin-bottom: 10px;">
+                    <button id="sec-vecchio-btn" class="tag-toggle active" data-section="vecchio">Domande Vecchie</button>
+                    <button id="sec-nuovo-btn" class="tag-toggle active" data-section="nuovo">Domande Nuove (da completo)</button>
+                </div>
+            </section>
+
+            <section class="setup-section">
                 <label class="setup-label">📂 Categorie</label>
                 <p class="setup-hint">Seleziona gli argomenti da includere</p>
                 <div id="tags-container" class="tags-grid"></div>

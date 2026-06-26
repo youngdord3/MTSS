@@ -21,7 +21,8 @@
       "Infrastruttura"
     ],
     "explanation": "Un server fisico è dedicato a una singola applicazione: i deploy sono lenti perché richiedono configurazione manuale, spreca risorse poiché non le condivide, è costoso in acquisto e manutenzione, e ospitare più app sullo stesso OS è complicato per i conflitti di dipendenze.",
-    "id": "local-001"
+    "id": "local-001",
+    "section": "vecchio"
   },
   {
     "question": "Quali tra le seguenti affermazioni relative alla Continuous Delivery NON è vera?",
@@ -40,7 +41,8 @@
       "CI/CD"
     ],
     "explanation": "In Continuous Delivery il principio fondamentale è 'build once, deploy many': il binario viene prodotto una sola volta e promosso tra gli ambienti. Rieseguire la build per ogni ambiente rompe la garanzia che lo stesso artefatto sia stato testato end-to-end.",
-    "id": "local-002"
+    "id": "local-002",
+    "section": "vecchio"
   },
   {
     "question": "Quale evento del framework SCRUM si celebra dopo la Sprint Review e prima del prossimo Sprint Planning, valutando ciò che funziona e non funziona?",
@@ -57,7 +59,8 @@
       "SCRUM"
     ],
     "explanation": "La Sprint Retrospective è l'ultimo evento dello sprint: il team riflette sui processi, strumenti e relazioni interni per migliorare continuamente. Avviene dopo la Sprint Review (che guarda il prodotto) e prima del nuovo Sprint Planning.",
-    "id": "local-003"
+    "id": "local-003",
+    "section": "vecchio"
   },
   {
     "question": "Quale frase descrive la Build Automation?",
@@ -75,7 +78,8 @@
       "CI/CD"
     ],
     "explanation": "La Build Automation automatizza le fasi ripetibili e verificabili: compilazione del sorgente, packaging dei binari ed esecuzione della suite di test. L'obiettivo è eliminare gli errori umani e rendere il processo riproducibile.",
-    "id": "local-004"
+    "id": "local-004",
+    "section": "vecchio"
   },
   {
     "question": "Cosa fa VMware?",
@@ -98,7 +102,8 @@
       "Virtualizzazione"
     ],
     "explanation": "VMware è una piattaforma di virtualizzazione basata su hypervisor che permette di creare e configurare VM, dimensionarle con le risorse necessarie, monitorarne lo stato e centralizzare la gestione di tutte le VM da un'unica console (vCenter).",
-    "id": "local-005"
+    "id": "local-005",
+    "section": "vecchio"
   },
   {
     "question": "A quali categorie appartengono i test di unità?",
@@ -123,7 +128,8 @@
       "Testing"
     ],
     "explanation": "I test di unità sono: Verifica (controllano che il codice rispetti la specifica tecnica), Funzionali (testano una funzionalità specifica), Dinamici (richiedono l'esecuzione del codice) e White box (il tester conosce l'implementazione interna del SUT).",
-    "id": "local-006"
+    "id": "local-006",
+    "section": "vecchio"
   },
   {
     "question": "Quale tra le seguenti è la definizione migliore per Analisi statica del codice?",
@@ -141,7 +147,8 @@
       "Testing"
     ],
     "explanation": "L'analisi statica esamina il codice sorgente senza eseguirlo (strumenti come PMD, Checkstyle, SonarQube). Permette di trovare bug, code smell e violazioni di stile in fase di sviluppo, prima ancora che il software venga avviato.",
-    "id": "local-007"
+    "id": "local-007",
+    "section": "vecchio"
   },
   {
     "question": "Quale tra queste tipologie di VCS è il più utilizzato?",
@@ -158,7 +165,8 @@
       "Version Control"
     ],
     "explanation": "I DVCS (Distributed VCS) come Git sono i più usati perché ogni sviluppatore ha una copia completa del repository. Questo consente di lavorare offline, fa branch/merge efficienti e non ha un single point of failure come i VCS centralizzati.",
-    "id": "local-008"
+    "id": "local-008",
+    "section": "vecchio"
   },
   {
     "question": "Nel framework SCRUM, quale tra i seguenti NON è un ruolo del Product Owner?",
@@ -176,7 +184,8 @@
       "SCRUM"
     ],
     "explanation": "Il responsabile dell'adozione dei valori e delle pratiche SCRUM è lo Scrum Master, non il Product Owner. Il PO è invece responsabile del Product Backlog, della prioritizzazione e della visione del prodotto verso il committente.",
-    "id": "local-009"
+    "id": "local-009",
+    "section": "vecchio"
   },
   {
     "question": "Quali tra queste sono caratteristiche di Jenkins?",
@@ -204,7 +213,8 @@
       "CI/CD"
     ],
     "explanation": "Jenkins è un server CI/CD open source adatto a progetti complessi: usa il Jenkinsfile (Groovy DSL) per la configurazione, supporta agent distribuiti per esecuzioni parallele su infrastrutture di calcolo distribuite, e si integra con quasi tutti i VCS tramite plugin.",
-    "id": "local-010"
+    "id": "local-010",
+    "section": "vecchio"
   },
   {
     "question": "Quali sono i componenti di input e output in un processo di build?",
@@ -222,7 +232,8 @@
       "CI/CD"
     ],
     "explanation": "Il processo di build prende in input tutto il necessario per produrre il software (sorgenti, file di build come pom.xml/Makefile, librerie, test) e produce in output gli artefatti distribuibili (documentazione generata, il prodotto compilato/packaged, librerie pubblicate).",
-    "id": "local-011"
+    "id": "local-011",
+    "section": "vecchio"
   },
   {
     "question": "Quale delle seguenti affermazioni NON è corretta sulla Definition of Done (DOD)?",
@@ -241,7 +252,8 @@
       "SCRUM"
     ],
     "explanation": "La DoD non chiude automaticamente un task: è una checklist condivisa che definisce i criteri minimi di completamento. Il passaggio a 'closed' richiede una verifica esplicita da parte del team, non avviene in modo automatico al semplice soddisfacimento della DoD.",
-    "id": "local-012"
+    "id": "local-012",
+    "section": "vecchio"
   },
   {
     "question": "Quali sono le caratteristiche di Ansible?",
@@ -279,7 +291,8 @@
       "Configuration Management"
     ],
     "explanation": "Ansible è agentless e leggero: i nodi gestiti non necessitano di Ansible installato (bastano Python e SSH per Linux). I playbook sono scritti in YAML e composti da task e handler. Un handler viene eseguito solo se notificato da una task (es. riavvio servizio dopo modifica config). L'inventory elenca i server gestiti.",
-    "id": "local-013"
+    "id": "local-013",
+    "section": "vecchio"
   },
   {
     "question": "Concetti relativi al work item:",
@@ -312,7 +325,8 @@
       "Project Management"
     ],
     "explanation": "Un work item è l'unità atomica di lavoro in un progetto: ha un ID univoco, appartiene a un progetto, presenta stati, priorità, tipologie (bug, feature, task), stime temporali e date (apertura/rilascio). Non descrive il percorso di vita (quello è il workflow) né fornisce una visione d'insieme (quello è la board/dashboard).",
-    "id": "local-014"
+    "id": "local-014",
+    "section": "vecchio"
   },
   {
     "question": "Quali sono le caratteristiche di un'immutable infrastructure?",
@@ -336,7 +350,8 @@
       "Configuration Management"
     ],
     "explanation": "In un'infrastruttura immutabile non si modificano i server esistenti: ad ogni cambiamento si costruisce una nuova immagine e si sostituisce l'istanza. Questo elimina il configuration drift (le istanze sono sempre identiche all'immagine) ma il processo di rebuild è più lento rispetto a una modifica in-place.",
-    "id": "local-015"
+    "id": "local-015",
+    "section": "vecchio"
   },
   {
     "question": "Cosa si intende per \"tracciabilità\" nella Configuration Management?",
@@ -353,7 +368,8 @@
       "Configuration Management"
     ],
     "explanation": "La tracciabilità in CM significa poter risalire a come è stato costruito un ambiente (quali versioni di dipendenze, script, configurazioni) e confrontare due versioni per individuare le differenze (diff). È fondamentale per il debugging e per gli audit.",
-    "id": "local-016"
+    "id": "local-016",
+    "section": "vecchio"
   },
   {
     "question": "Concetti relativi al Workflow:",
@@ -372,7 +388,8 @@
       "Project Management"
     ],
     "explanation": "Il Workflow definisce gli stati e le transizioni (non le priorità) che un work item attraversa nel suo ciclo di vita (es. New → In Progress → Review → Done). Implementa il processo da seguire per completare un'attività, non solo per registrarla.",
-    "id": "local-017"
+    "id": "local-017",
+    "section": "vecchio"
   },
   {
     "question": "Quale delle seguenti affermazioni è FALSA riguardo ai repository remoti in Maven?",
@@ -390,7 +407,8 @@
       "Build Tools"
     ],
     "explanation": "I repository remoti (come Maven Central) non garantiscono sicurezza assoluta: esistono casi di dependency confusion e supply chain attack. Per questo le aziende usano repository privati (Nexus, Artifactory) dove le librerie vengono scansionate prima di essere rese disponibili internamente.",
-    "id": "local-018"
+    "id": "local-018",
+    "section": "vecchio"
   },
   {
     "question": "Quali sono le caratteristiche di un container?",
@@ -418,7 +436,8 @@
       "Container"
     ],
     "explanation": "I container condividono il kernel dell'host (non virtualizzano l'hardware come le VM) quindi non necessitano di hypervisor e sono più veloci da avviare. Virtualizzano il sistema operativo tramite namespace e cgroups. Ogni container è isolato dagli altri e dall'host, e non conosce l'ambiente circostante.",
-    "id": "local-019"
+    "id": "local-019",
+    "section": "vecchio"
   },
   {
     "question": "Quale tra questi analizza il codice sorgente statico per trovare difetti di programmazione quali: variabili inutilizzate, blocchi catch vuoti...?",
@@ -436,7 +455,8 @@
       "Testing"
     ],
     "explanation": "PMD analizza il sorgente Java (e altri linguaggi) per trovare difetti come variabili inutilizzate, blocchi catch vuoti, codice irraggiungibile e altri code smell. Checkstyle verifica le convenzioni di stile, Findbugs analizza il bytecode per trovare bug potenziali, SonarQube è una piattaforma che integra più analizzatori.",
-    "id": "local-020"
+    "id": "local-020",
+    "section": "vecchio"
   },
   {
     "id": "form-001",
@@ -462,7 +482,8 @@
       "Configuration Management",
       "Infrastruttura"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-002",
@@ -481,7 +502,8 @@
     "tags": [
       "Version Control"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-003",
@@ -504,7 +526,8 @@
       "Version Control",
       "CI/CD"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-004",
@@ -531,7 +554,8 @@
       "Configuration Management",
       "Infrastruttura"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-005",
@@ -549,7 +573,8 @@
     "tags": [
       "Build Tools"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-006",
@@ -569,7 +594,8 @@
     "tags": [
       "Version Control"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-007",
@@ -595,7 +621,8 @@
       "Configuration Management",
       "Infrastruttura"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-008",
@@ -613,7 +640,8 @@
     "tags": [
       "Version Control"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-009",
@@ -632,7 +660,8 @@
       "Version Control",
       "CI/CD"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-010",
@@ -649,7 +678,8 @@
     "tags": [
       "Configuration Management"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-011",
@@ -668,7 +698,8 @@
       "Testing",
       "Project Management"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-012",
@@ -689,7 +720,8 @@
       "SCRUM",
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-014",
@@ -706,7 +738,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-015",
@@ -725,7 +758,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-016",
@@ -747,7 +781,8 @@
       "Version Control",
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-018",
@@ -766,7 +801,8 @@
       "Version Control",
       "CI/CD"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-019",
@@ -783,7 +819,8 @@
     "tags": [
       "Version Control"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-020",
@@ -802,7 +839,8 @@
       "Container",
       "Infrastruttura"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-021",
@@ -820,7 +858,8 @@
     "tags": [
       "Generale"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-023",
@@ -844,7 +883,8 @@
       "CI/CD",
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-024",
@@ -860,7 +900,8 @@
     "tags": [
       "Container"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-025",
@@ -878,7 +919,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-028",
@@ -909,7 +951,8 @@
     "tags": [
       "Project Management"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-029",
@@ -928,7 +971,8 @@
       "Build Tools",
       "Infrastruttura"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-033",
@@ -951,7 +995,8 @@
       "Virtualizzazione",
       "Infrastruttura"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-034",
@@ -969,7 +1014,8 @@
     "tags": [
       "Build Tools"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-035",
@@ -987,7 +1033,8 @@
       "Version Control",
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-036",
@@ -1005,7 +1052,8 @@
     "tags": [
       "SCRUM"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-037",
@@ -1024,7 +1072,8 @@
       "Configuration Management",
       "Infrastruttura"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-038",
@@ -1042,7 +1091,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-039",
@@ -1061,7 +1111,8 @@
       "Testing",
       "Project Management"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-040",
@@ -1078,7 +1129,8 @@
       "CI/CD",
       "Container"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-041",
@@ -1096,7 +1148,8 @@
     "tags": [
       "SCRUM"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-042",
@@ -1114,7 +1167,8 @@
     "tags": [
       "SCRUM"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-043",
@@ -1142,7 +1196,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-044",
@@ -1167,7 +1222,8 @@
       "Testing",
       "Project Management"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-046",
@@ -1190,7 +1246,8 @@
       "Version Control",
       "Infrastruttura"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-047",
@@ -1212,7 +1269,8 @@
     "tags": [
       "Generale"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-048",
@@ -1238,7 +1296,8 @@
       "CI/CD",
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-049",
@@ -1259,7 +1318,8 @@
     "tags": [
       "Generale"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-050",
@@ -1277,7 +1337,8 @@
     "tags": [
       "Build Tools"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-051",
@@ -1295,7 +1356,8 @@
       "Version Control",
       "Infrastruttura"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-052",
@@ -1312,7 +1374,8 @@
     "tags": [
       "Version Control"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-053",
@@ -1331,7 +1394,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-054",
@@ -1348,7 +1412,8 @@
     "tags": [
       "SCRUM"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-055",
@@ -1368,7 +1433,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-057",
@@ -1387,7 +1453,8 @@
     "tags": [
       "Container"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-058",
@@ -1405,7 +1472,8 @@
     "tags": [
       "Generale"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-060",
@@ -1424,7 +1492,8 @@
       "CI/CD",
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-061",
@@ -1442,7 +1511,8 @@
       "CI/CD",
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-062",
@@ -1459,7 +1529,8 @@
     "tags": [
       "Configuration Management"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-063",
@@ -1481,7 +1552,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-064",
@@ -1510,7 +1582,8 @@
       "Version Control",
       "Infrastruttura"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-065",
@@ -1528,7 +1601,8 @@
     "tags": [
       "SCRUM"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-066",
@@ -1553,7 +1627,8 @@
       "Version Control",
       "Build Tools"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-067",
@@ -1574,7 +1649,8 @@
     "tags": [
       "SCRUM"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-068",
@@ -1597,7 +1673,8 @@
       "Version Control",
       "CI/CD"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-069",
@@ -1614,7 +1691,8 @@
     "tags": [
       "Container"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-070",
@@ -1637,7 +1715,8 @@
       "Virtualizzazione",
       "Infrastruttura"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-071",
@@ -1659,7 +1738,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-072",
@@ -1677,7 +1757,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-073",
@@ -1695,7 +1776,8 @@
     "tags": [
       "Build Tools"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-074",
@@ -1720,7 +1802,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-075",
@@ -1738,7 +1821,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-077",
@@ -1767,7 +1851,8 @@
     "tags": [
       "Project Management"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-078",
@@ -1798,7 +1883,8 @@
     "tags": [
       "Project Management"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-080",
@@ -1823,7 +1909,8 @@
       "Virtualizzazione",
       "Infrastruttura"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-081",
@@ -1848,7 +1935,8 @@
       "Version Control",
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-082",
@@ -1870,7 +1958,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-083",
@@ -1891,7 +1980,8 @@
       "CI/CD",
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-084",
@@ -1910,7 +2000,8 @@
       "CI/CD",
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-085",
@@ -1928,7 +2019,8 @@
       "CI/CD",
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-088",
@@ -1955,7 +2047,8 @@
       "Version Control",
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-090",
@@ -1973,7 +2066,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-091",
@@ -1990,7 +2084,8 @@
     "tags": [
       "Configuration Management"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-092",
@@ -2006,7 +2101,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-093",
@@ -2026,7 +2122,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-094",
@@ -2048,7 +2145,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-095",
@@ -2066,7 +2164,8 @@
       "SCRUM",
       "Project Management"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-096",
@@ -2085,7 +2184,8 @@
       "SCRUM",
       "Project Management"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-097",
@@ -2104,7 +2204,8 @@
     "tags": [
       "Generale"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-098",
@@ -2139,7 +2240,8 @@
       "Testing",
       "Project Management"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-099",
@@ -2158,7 +2260,8 @@
     "tags": [
       "SCRUM"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-100",
@@ -2175,7 +2278,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-101",
@@ -2196,7 +2300,8 @@
       "CI/CD",
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-102",
@@ -2216,7 +2321,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-103",
@@ -2234,7 +2340,8 @@
     "tags": [
       "Generale"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-104",
@@ -2256,7 +2363,8 @@
       "Testing",
       "Project Management"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-105",
@@ -2274,7 +2382,8 @@
     "tags": [
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
   },
   {
     "id": "form-106",
@@ -2299,6 +2408,1751 @@
       "Infrastruttura",
       "Testing"
     ],
-    "explanation": ""
+    "explanation": "",
+    "section": "vecchio"
+  },
+  {
+    "id": "mtss_star_008",
+    "question": "* Quali sono le caratteristiche di Ansible",
+    "options": [
+      "un computer con Ansible installato può fare da controller",
+      "un handler agisce in conseguenza ad un evento task",
+      "Un controller può lanciare comandi sulle macchine gestite",
+      "i playbook sono scritti in YAML",
+      "non è possibile utilizzare Windows",
+      "i playbook sono scritti in XML",
+      "è leggero",
+      "una task agisce in conseguenza ad un evento handler",
+      "i playbook sono insiemi di task e handler",
+      "per Linux richiede Phyton>2.6 e SSH",
+      "i playbook sono solo insiemi di task",
+      "una macchina può fare da nodo gestito solo se ha Ansible installato",
+      "la singola unità è della handler",
+      "è pesante",
+      "la singola unità è detta task",
+      "i server presso cui ansible può operare sono in una lista chiamata inventory"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      6,
+      8,
+      9,
+      14,
+      15
+    ],
+    "multiple": true,
+    "tags": [
+      "Configuration Management e Ansible"
+    ],
+    "explanation": "Risposta corretta: un computer con Ansible installato può fare da controller; un handler agisce in conseguenza ad un evento task; Un controller può lanciare comandi sulle macchine gestite; i playbook sono scritti in YAML; è leggero; i playbook sono insiemi di task e handler; per Linux richiede Phyton>2.6 e SSH; la singola unità è detta task; i server presso cui ansible può operare sono in una lista chiamata inventory.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_star_010",
+    "question": "* Quali sono le caratteristiche dell'utilizzo di un server fisico",
+    "options": [
+      "costoso",
+      "non spreca risorse",
+      "è complicato ospitare più applicazioni sullo stesso sistema operativo",
+      "isola le applicazioni in ambienti indipendenti",
+      "spreca risorse",
+      "esegue più sistemi operativi su uno stesso server fisico",
+      "tempi di deploy lenti"
+    ],
+    "correct": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "multiple": true,
+    "tags": [
+      "Virtualizzazione, container e infrastruttura"
+    ],
+    "explanation": "Risposta corretta: costoso; è complicato ospitare più applicazioni sullo stesso sistema operativo; spreca risorse; tempi di deploy lenti.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_off_011",
+    "question": "La pratica TDD prevede che nel ciclo di sviluppo si ripetano 3 fasi. Ordinare nel modo corretto le 3 fasi:\n1) . WRITE PRODUCTION CODE \n2) . CLEAN UP CODE \n3) . RE(WRITE) A TEST  ",
+    "options": [
+      "2-3-1",
+      "3-1-2",
+      "1-2-3",
+      "3-2-1",
+      "1-3-2",
+      "2-1-3"
+    ],
+    "correct": [
+      1
+    ],
+    "multiple": true,
+    "tags": [
+      "Software testing, unit testing e analisi statica"
+    ],
+    "explanation": "Risposta corretta: 3-1-2.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_star_012",
+    "question": "* Quali sono le caratteristiche di un container",
+    "options": [
+      "non necessita di un hypervisor",
+      "i container sono isolati tra loro e anche dall'host stesso",
+      "virtualizza l'hardware",
+      "sa com'è configurato l'ambiente circostante",
+      "gira nel kernel della macchina host",
+      "è più veloce delle VM",
+      "è un'istanza di esecuzione di un'applicazione completamente isolata",
+      "virtualizza il sistema operativo",
+      "necessita di un hypervisor"
+    ],
+    "correct": [
+      0,
+      1,
+      4,
+      5,
+      6,
+      7
+    ],
+    "multiple": true,
+    "tags": [
+      "Virtualizzazione, container e infrastruttura"
+    ],
+    "explanation": "Risposta corretta: non necessita di un hypervisor; i container sono isolati tra loro e anche dall'host stesso; gira nel kernel della macchina host; è più veloce delle VM; è un'istanza di esecuzione di un'applicazione completamente isolata; virtualizza il sistema operativo.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_star_015",
+    "question": "* concetti relativi al work item ",
+    "options": [
+      "insieme di stati e transizioni",
+      "relativo ad un progetto",
+      "diverse priorità",
+      "attività minima del progetto",
+      "presenta informazioni sulle date (apertura, possibile rilascio)",
+      "diverse tipologie",
+      "permette di avere una visione d'insieme del progetto",
+      "presenta il percorso di vita di un task in tutte le sue fasi",
+      "presenta stati",
+      "codice univoco (inteso come ID)",
+      "permette di visualizzare più task insieme",
+      "presenta stime in tempo"
+    ],
+    "correct": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      11
+    ],
+    "multiple": true,
+    "tags": [
+      "Issue Tracking System, project management e Scrum"
+    ],
+    "explanation": "Risposta corretta: relativo ad un progetto; diverse priorità; attività minima del progetto; presenta informazioni sulle date (apertura, possibile rilascio); diverse tipologie; presenta stati; codice univoco (inteso come ID); presenta stime in tempo.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_off_025",
+    "question": "quale frase descrive la Build Automation",
+    "options": [
+      "automazione del software distribuibile che include: analisi dei requisiti, versionamento del codice e documentazione finale",
+      "creazione automatica di un software tramite: scrittura del codice, modifica manuale dei file binari e verifica dell'interfaccia grafica",
+      "distribuzione automatica del software tramite: debug del codice, conversione in PDF dei file di progetto e caricamento manuale sul server",
+      "creazione automatica di un software distribuibile tramite: compilazione del codice sorgente, il packaging dei file binari e l'esecuzione di test"
+    ],
+    "correct": [
+      3
+    ],
+    "multiple": true,
+    "tags": [
+      "Build automation, Maven e repository"
+    ],
+    "explanation": "Risposta corretta: creazione automatica di un software distribuibile tramite: compilazione del codice sorgente, il packaging dei file binari e l'esecuzione di test.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_off_033",
+    "question": "In quale evento del framework scrum:\n-il gruppo di lavoro presenta ciò che ha realzzato durante lo sprint\n-viene validato e accettato quanto realizzato",
+    "options": [
+      "sprint review",
+      "sprint planning",
+      "sprint retrospective",
+      "daily scrum"
+    ],
+    "correct": [
+      0
+    ],
+    "multiple": true,
+    "tags": [
+      "Issue Tracking System, project management e Scrum"
+    ],
+    "explanation": "Risposta corretta: sprint review.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_off_037",
+    "question": "cosa si intende per \"tracciabilità\" nella Configuration Management",
+    "options": [
+      "vedere  le dipendenze utilizzate per creare un ambiente e confrontare due versioni diverse di uno stesso ambiente per vederne le differenze",
+      "impedire che versioni differenti dello stesso ambiente vengano create accidentalmente",
+      "ogni componente dell’ambiente viene aggiornato automaticamente quando cambia una dipendenza"
+    ],
+    "correct": [
+      0
+    ],
+    "multiple": true,
+    "tags": [
+      "Configuration Management e Ansible"
+    ],
+    "explanation": "Risposta corretta: vedere  le dipendenze utilizzate per creare un ambiente e confrontare due versioni diverse di uno stesso ambiente per vederne le differenze.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_off_045",
+    "question": "completare la definizione di test di unità:\ni test di unitò sono ___, prodotto___, che esercitano un unità del programma",
+    "options": [
+      "del codice - dallo sviluppatore",
+      "dei work item - dal poject manager",
+      "dei test - dallo scrum master"
+    ],
+    "correct": [
+      0
+    ],
+    "multiple": true,
+    "tags": [
+      "Issue Tracking System, project management e Scrum"
+    ],
+    "explanation": "Risposta corretta: del codice - dallo sviluppatore.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_star_048",
+    "question": "* Quali sono le caratteristiche di un immutable infrastructure",
+    "options": [
+      "mantiene sempre la stessa istanza",
+      "è lento",
+      "viene costruita una nuova immagine ad ogni aggiornamento di configurazione",
+      "si riduce il rischio di drift",
+      "semplice da gestire",
+      "non è semplice \"tornare indietro\"",
+      "rischia drift",
+      "è veloce"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "multiple": true,
+    "tags": [
+      "Configuration Management e Ansible"
+    ],
+    "explanation": "Risposta corretta: è lento; viene costruita una nuova immagine ad ogni aggiornamento di configurazione; si riduce il rischio di drift.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_star_052",
+    "question": "* Cosa fa VMware",
+    "options": [
+      "permette di monitorare continuamente lo stato di ogni VM",
+      "centralizza il controllo su tutte le VM esistenti",
+      "non utilizza l'hypervisor",
+      "dimensiona ogni VM con le risorse necessarie",
+      "funzionano con un docker",
+      "crea e configura VM"
+    ],
+    "correct": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "multiple": true,
+    "tags": [
+      "Virtualizzazione, container e infrastruttura"
+    ],
+    "explanation": "Risposta corretta: permette di monitorare continuamente lo stato di ogni VM; centralizza il controllo su tutte le VM esistenti; dimensiona ogni VM con le risorse necessarie; crea e configura VM.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_off_059",
+    "question": "Quale evento del framework SCRUM : - Si celebra dopo la Sprint Review e prima del prossimo Sprint Planning\n- Si valuta ciò che sta funzionando e ciò che non sta funzionando nel progetto e nel processo.",
+    "options": [
+      "Sprint retrospective",
+      "Sprint review",
+      "Daily scrum"
+    ],
+    "correct": [
+      0
+    ],
+    "multiple": true,
+    "tags": [
+      "Issue Tracking System, project management e Scrum"
+    ],
+    "explanation": "Risposta corretta: Sprint retrospective.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_star_066",
+    "question": "* quali sono i componenti di input e output in un processo di build",
+    "options": [
+      "input: file di build, codice di produzione, documentazione, librerie, codice di test. Output: documentazione, prodotto, librerie",
+      "Input: codice sorgente, script di deploy, file di configurazione del sistema, librerie condivise. Output: artefatti intermedi, script di test, container Docker",
+      "Input: codice di produzione, codice di test, immagini dell’interfaccia, file README. Output: pacchetto eseguibile, file log, backup del repository",
+      "Input: codice sorgente, file di configurazione dell’ambiente, ticket di sviluppo, librerie esterne. Output: eseguibile, log di compilazione, changelog, ambienti di test"
+    ],
+    "correct": [
+      0
+    ],
+    "multiple": true,
+    "tags": [
+      "Virtualizzazione, container e infrastruttura"
+    ],
+    "explanation": "Risposta corretta: input: file di build, codice di produzione, documentazione, librerie, codice di test. Output: documentazione, prodotto, librerie.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_star_068",
+    "question": "* Quali tra queste sono caratteristiche di Jenkins",
+    "options": [
+      "viene configurato con jankinsfile",
+      "si integra con vari sistemi di controllo del codice sorgente",
+      "consente esecuzioni parallele sfruttando infrastrutture di calcolo distribuite",
+      "è scalabile automaticamente, ma con risorse limitate",
+      "consente esecuzioni parallele, ma con limitazioni dovute all'infrastruttura ospitante",
+      "viene configurato con file YAML",
+      "adatto a progetti complessi",
+      "si integra nativamente con GitHub",
+      "adatto a progetti di piccola/media scala",
+      "è scalabile orizzontalmente con nodi di build distribuiti e configurazione personalizzata delle risorse"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      6,
+      9
+    ],
+    "multiple": true,
+    "tags": [
+      "Continuous Integration, Delivery e artifact repository"
+    ],
+    "explanation": "Risposta corretta: viene configurato con jankinsfile; si integra con vari sistemi di controllo del codice sorgente; consente esecuzioni parallele sfruttando infrastrutture di calcolo distribuite; adatto a progetti complessi; è scalabile orizzontalmente con nodi di build distribuiti e configurazione personalizzata delle risorse.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_star_075",
+    "question": "* Quale delle seguenti affermazioni è FALSA riguardo ai repository remoti in Maven",
+    "options": [
+      "Le aziende spesso usano repository locali per motivi di sicurezza",
+      "Le librerie scaricate da repository remoti sono sempre sicure e verificate",
+      "Possono essere pubblici o privati",
+      "Possono contenere librerie open-source e plugin"
+    ],
+    "correct": [
+      1
+    ],
+    "multiple": true,
+    "tags": [
+      "Build automation, Maven e repository"
+    ],
+    "explanation": "Risposta corretta: Le librerie scaricate da repository remoti sono sempre sicure e verificate.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_star_080",
+    "question": "* concetti relativi al Workflow",
+    "options": [
+      "insieme di stati e priorità che un work item attraversa durante il suo ciclo di vita",
+      "insieme di stati e transazioni che un work item attraversa durante il suo ciclo di vita",
+      "permette di implementare un processo da seguire per completare l'attività rappresentata da un work item",
+      "permette di implementare un processo da seguire per registrare il lavoro svolto in un work item"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "multiple": true,
+    "tags": [
+      "Issue Tracking System, project management e Scrum"
+    ],
+    "explanation": "Risposta corretta: insieme di stati e transazioni che un work item attraversa durante il suo ciclo di vita; permette di implementare un processo da seguire per completare l'attività rappresentata da un work item.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_appello_open_001",
+    "question": "Descrivi i ruoli principali del framework Scrum.",
+    "options": [],
+    "correct": [],
+    "multiple": false,
+    "tags": [
+      "Issue Tracking System, project management e Scrum"
+    ],
+    "explanation": "",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_appello_open_002",
+    "question": "Che cos'e il Configuration Management e cosa caratterizza i Modern CM Tools?",
+    "options": [],
+    "correct": [],
+    "multiple": false,
+    "tags": [
+      "Configuration Management e Ansible"
+    ],
+    "explanation": "",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_appello_open_003",
+    "question": "Spiega che cos'e l'analisi statica e fornisci alcuni esempi.",
+    "options": [],
+    "correct": [],
+    "multiple": false,
+    "tags": [
+      "Software testing, unit testing e analisi statica"
+    ],
+    "explanation": "",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_appello_open_004",
+    "question": "Definisci un Version Control System e distingui CVCS e DVCS.",
+    "options": [],
+    "correct": [],
+    "multiple": false,
+    "tags": [
+      "Version Control System e Git"
+    ],
+    "explanation": "",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_appello_open_005",
+    "question": "Spiega il principio \"Deploy the Same Way to Every Environment\".",
+    "options": [],
+    "correct": [],
+    "multiple": false,
+    "tags": [
+      "Continuous Integration, Delivery e artifact repository"
+    ],
+    "explanation": "",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_appello_open_006",
+    "question": "Perche l'early testing e considerato una pratica agile importante?",
+    "options": [],
+    "correct": [],
+    "multiple": false,
+    "tags": [
+      "Software testing, unit testing e analisi statica"
+    ],
+    "explanation": "",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_appello_open_007",
+    "question": "Fornisci un esempio di test dinamico non funzionale e spiegane lo scopo.",
+    "options": [],
+    "correct": [],
+    "multiple": false,
+    "tags": [
+      "Software testing, unit testing e analisi statica"
+    ],
+    "explanation": "",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_appello_open_008",
+    "question": "Come si puo chiudere automaticamente una issue GitHub tramite commit?",
+    "options": [],
+    "correct": [],
+    "multiple": false,
+    "tags": [
+      "Version Control System e Git"
+    ],
+    "explanation": "",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_appello_open_009",
+    "question": "Descrivi come usare GitHub Actions per build automation e Continuous Integration.",
+    "options": [],
+    "correct": [],
+    "multiple": false,
+    "tags": [
+      "Continuous Integration, Delivery e artifact repository"
+    ],
+    "explanation": "",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_appello_open_010",
+    "question": "Spiega il ruolo di Maven, del POM e del lifecycle di build.",
+    "options": [],
+    "correct": [],
+    "multiple": false,
+    "tags": [
+      "Build automation, Maven e repository"
+    ],
+    "explanation": "",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_appello_open_011",
+    "question": "Che ruolo ha JUnit nel processo di unit testing?",
+    "options": [],
+    "correct": [],
+    "multiple": false,
+    "tags": [
+      "Software testing, unit testing e analisi statica"
+    ],
+    "explanation": "",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_001",
+    "question": "Quali tra le seguenti affermazioni descrivono correttamente una milestone in GitHub Issues?",
+    "options": [
+      "raggruppa issue legate ad un obiettivo o una release",
+      "definisce il codice sorgente salvato nel repository locale",
+      "permette di associare una scadenza o un tempo limite alle issue",
+      "contiene automaticamente tutti i commit non ancora pushati",
+      "sostituisce il workflow Git con un branch remoto"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "multiple": true,
+    "tags": [
+      "Issue Tracking System, project management e Scrum"
+    ],
+    "explanation": "Risposta corretta: raggruppa issue legate ad un obiettivo o una release; permette di associare una scadenza o un tempo limite alle issue.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_002",
+    "question": "Nel contesto di un Issue Tracking System, quale tra le seguenti è la migliore definizione di workflow?",
+    "options": [
+      "repository binario che conserva gli artefatti prodotti dalla build",
+      "insieme di stati e transizioni attraversati da un work item durante il suo ciclo di vita",
+      "file YAML che descrive i job di GitHub Actions",
+      "insieme dei commit salvati nella staging area"
+    ],
+    "correct": [
+      1
+    ],
+    "multiple": true,
+    "tags": [
+      "Issue Tracking System, project management e Scrum"
+    ],
+    "explanation": "Risposta corretta: insieme di stati e transizioni attraversati da un work item durante il suo ciclo di vita.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_003",
+    "question": "Quali tra le seguenti sono informazioni tipicamente associate a un work item?",
+    "options": [
+      "data di apertura o ultimo aggiornamento",
+      "fase verify del lifecycle Maven",
+      "numero di kernel condivisi dal container",
+      "stato nel workflow",
+      "stima originaria o stima a finire",
+      "priorità",
+      "hash del binario prodotto dalla build"
+    ],
+    "correct": [
+      0,
+      3,
+      4,
+      5
+    ],
+    "multiple": true,
+    "tags": [
+      "Issue Tracking System, project management e Scrum"
+    ],
+    "explanation": "Risposta corretta: stato nel workflow; priorità; stima originaria o stima a finire; data di apertura o ultimo aggiornamento.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_004",
+    "question": "Quale tra le seguenti affermazioni su GitHub Issues è corretta?",
+    "options": [
+      "GitHub Issues conserva i jar prodotti da Maven come artifact repository",
+      "in GitHub il workflow delle issue è più semplice e non viene personalizzato come in strumenti tipo Jira",
+      "GitHub Issues permette sempre di definire liberamente qualsiasi stato e transizione del workflow",
+      "GitHub Issues è un CVCS alternativo a Git"
+    ],
+    "correct": [
+      1
+    ],
+    "multiple": true,
+    "tags": [
+      "Issue Tracking System, project management e Scrum"
+    ],
+    "explanation": "Risposta corretta: in GitHub il workflow delle issue è più semplice e non viene personalizzato come in strumenti tipo Jira.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_005",
+    "question": "Quali sono i pilastri empirici su cui si basa Scrum?",
+    "options": [
+      "centralizzazione",
+      "deploy automatico",
+      "compilazione",
+      "virtualizzazione",
+      "adattamento",
+      "ispezione",
+      "trasparenza"
+    ],
+    "correct": [
+      4,
+      5,
+      6
+    ],
+    "multiple": true,
+    "tags": [
+      "Issue Tracking System, project management e Scrum"
+    ],
+    "explanation": "Risposta corretta: trasparenza; ispezione; adattamento.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_006",
+    "question": "Nel framework Scrum, quale tra le seguenti affermazioni sul Product Owner è corretta?",
+    "options": [
+      "è un comitato formato da tutti gli stakeholder del prodotto",
+      "definisce i job e gli step dei workflow GitHub Actions",
+      "rimuove da solo tutti gli impedimenti tecnici del team sostituendosi ai Developers",
+      "è accountable per massimizzare il valore del prodotto e gestire efficacemente il Product Backlog"
+    ],
+    "correct": [
+      3
+    ],
+    "multiple": true,
+    "tags": [
+      "Issue Tracking System, project management e Scrum"
+    ],
+    "explanation": "Risposta corretta: è accountable per massimizzare il valore del prodotto e gestire efficacemente il Product Backlog.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_007",
+    "question": "Quali elementi compongono lo Sprint Backlog secondo Scrum?",
+    "options": [
+      "Product Goal come unico contenuto dello Sprint Backlog",
+      "Configuration Management Database",
+      "Sprint Goal",
+      "repository Maven locale",
+      "Product Backlog items selezionati per lo Sprint",
+      "piano per consegnare l’Increment"
+    ],
+    "correct": [
+      2,
+      4,
+      5
+    ],
+    "multiple": true,
+    "tags": [
+      "Issue Tracking System, project management e Scrum"
+    ],
+    "explanation": "Risposta corretta: Sprint Goal; Product Backlog items selezionati per lo Sprint; piano per consegnare l’Increment.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_008",
+    "question": "Quale tra le seguenti affermazioni sul Daily Scrum è corretta?",
+    "options": [
+      "serve a presentare formalmente l’Increment agli stakeholder finali",
+      "serve a ispezionare il progresso verso lo Sprint Goal e adattare lo Sprint Backlog se necessario",
+      "serve a installare dipendenze Maven nel repository locale",
+      "serve a chiudere lo Sprint dopo la Sprint Review"
+    ],
+    "correct": [
+      1
+    ],
+    "multiple": true,
+    "tags": [
+      "Issue Tracking System, project management e Scrum"
+    ],
+    "explanation": "Risposta corretta: serve a ispezionare il progresso verso lo Sprint Goal e adattare lo Sprint Backlog se necessario.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_009",
+    "question": "Quale tra le seguenti affermazioni sulla Definition of Done è corretta?",
+    "options": [
+      "è una stima di effort usata solo durante il Product Backlog refinement",
+      "se un Product Backlog item non soddisfa la Definition of Done, non può essere considerato parte dell’Increment",
+      "coincide con il file pom.xml del progetto",
+      "è definita dal repository remoto durante il git push"
+    ],
+    "correct": [
+      1
+    ],
+    "multiple": true,
+    "tags": [
+      "Issue Tracking System, project management e Scrum"
+    ],
+    "explanation": "Risposta corretta: se un Product Backlog item non soddisfa la Definition of Done, non può essere considerato parte dell’Increment.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_010",
+    "question": "Quali tra i seguenti sono workflow patterns citati nelle slide di VCS?",
+    "options": [
+      "JUnit lifecycle",
+      "Gitflow workflow",
+      "centralized workflow",
+      "forking workflow",
+      "Maven default lifecycle",
+      "Docker image workflow",
+      "feature branch workflow"
+    ],
+    "correct": [
+      1,
+      2,
+      3,
+      6
+    ],
+    "multiple": true,
+    "tags": [
+      "Version Control System e Git"
+    ],
+    "explanation": "Risposta corretta: centralized workflow; feature branch workflow; Gitflow workflow; forking workflow.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_011",
+    "question": "Quale workflow pattern enfatizza l’isolamento dello sviluppo delle funzionalità?",
+    "options": [
+      "release artifact workflow",
+      "centralized workflow",
+      "feature branch workflow",
+      "continuous testing workflow"
+    ],
+    "correct": [
+      2
+    ],
+    "multiple": true,
+    "tags": [
+      "Version Control System e Git"
+    ],
+    "explanation": "Risposta corretta: feature branch workflow.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_012",
+    "question": "Quale workflow pattern è particolarmente adatto ai progetti open source?",
+    "options": [
+      "Maven site workflow",
+      "single server workflow",
+      "forking workflow",
+      "local VCS workflow"
+    ],
+    "correct": [
+      2
+    ],
+    "multiple": true,
+    "tags": [
+      "Version Control System e Git"
+    ],
+    "explanation": "Risposta corretta: forking workflow.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_013",
+    "question": "Quali tra le seguenti sono caratteristiche di un DVCS?",
+    "options": [
+      "non permette branch locali",
+      "permette workflow non possibili o meno naturali nei CVCS",
+      "ogni clone può contenere la storia del repository",
+      "il version database è distribuito",
+      "richiede sempre il nodo centrale per eseguire un commit locale",
+      "memorizza solo gli artefatti binari prodotti dalla build"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "multiple": true,
+    "tags": [
+      "Version Control System e Git"
+    ],
+    "explanation": "Risposta corretta: il version database è distribuito; ogni clone può contenere la storia del repository; permette workflow non possibili o meno naturali nei CVCS.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_014",
+    "question": "In Git, quale comando mostra le modifiche già presenti nella staging area?",
+    "options": [
+      "git diff --cached",
+      "git remote -v",
+      "git restore filename",
+      "git diff"
+    ],
+    "correct": [
+      0
+    ],
+    "multiple": true,
+    "tags": [
+      "Version Control System e Git"
+    ],
+    "explanation": "Risposta corretta: git diff --cached.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_015",
+    "question": "In Git, quale comando rimuove un file dalla staging area senza cancellare la modifica dalla working directory?",
+    "options": [
+      "git diff HEAD",
+      "git restore --staged README.md",
+      "git restore README.md",
+      "git push origin main"
+    ],
+    "correct": [
+      1
+    ],
+    "multiple": true,
+    "tags": [
+      "Version Control System e Git"
+    ],
+    "explanation": "Risposta corretta: git restore --staged README.md.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_016",
+    "question": "Quale tra le seguenti affermazioni su fetch, pull e push è corretta?",
+    "options": [
+      "git pull crea automaticamente una milestone GitHub",
+      "git push invia modifiche verso il repository remoto",
+      "git fetch recupera dati dal remoto senza aggiornare direttamente la working copy",
+      "git pull recupera dal remoto e integra nella working copy",
+      "git push esegue sempre i test JUnit in locale",
+      "git fetch cancella la staging area"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "multiple": true,
+    "tags": [
+      "Version Control System e Git"
+    ],
+    "explanation": "Risposta corretta: git fetch recupera dati dal remoto senza aggiornare direttamente la working copy; git pull recupera dal remoto e integra nella working copy; git push invia modifiche verso il repository remoto.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_017",
+    "question": "Quale tra le seguenti descrive meglio il modo in cui Git memorizza i dati?",
+    "options": [
+      "come una sequenza di snapshot del filesystem del progetto",
+      "come un database relazionale di issue e milestone",
+      "come una lista di playbook YAML",
+      "come un artifact repository di jar e immagini Docker"
+    ],
+    "correct": [
+      0
+    ],
+    "multiple": true,
+    "tags": [
+      "Version Control System e Git"
+    ],
+    "explanation": "Risposta corretta: come una sequenza di snapshot del filesystem del progetto.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_018",
+    "question": "Quale tra le seguenti distingue correttamente build-automation utility e build-automation server?",
+    "options": [
+      "una build-automation utility conserva solo snapshot artifacts, un server conserva solo release artifacts",
+      "una utility è un tipo di VCS distribuito, un server è un tipo di CVCS",
+      "una build-automation utility esegue il processo di build, un build-automation server la lancia su base schedulata o triggerata",
+      "una utility definisce gli Sprint, un server definisce il Product Backlog"
+    ],
+    "correct": [
+      2
+    ],
+    "multiple": true,
+    "tags": [
+      "Build automation, Maven e repository"
+    ],
+    "explanation": "Risposta corretta: una build-automation utility esegue il processo di build, un build-automation server la lancia su base schedulata o triggerata.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_019",
+    "question": "Quali sono i tre build lifecycle predefiniti di Maven?",
+    "options": [
+      "site",
+      "package",
+      "snapshot",
+      "compile",
+      "default",
+      "deploy",
+      "release",
+      "verify",
+      "install",
+      "clean",
+      "test"
+    ],
+    "correct": [
+      0,
+      4,
+      9
+    ],
+    "multiple": true,
+    "tags": [
+      "Build automation, Maven e repository"
+    ],
+    "explanation": "Risposta corretta: default; clean; site.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_020",
+    "question": "Quali tra le seguenti sono fasi della default Build Lifecycle di Maven?",
+    "options": [
+      "verify",
+      "validate",
+      "test",
+      "rollback",
+      "retrospective",
+      "launch",
+      "package",
+      "compile",
+      "install",
+      "deploy",
+      "execute"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      6,
+      7,
+      8,
+      9
+    ],
+    "multiple": true,
+    "tags": [
+      "Build automation, Maven e repository"
+    ],
+    "explanation": "Risposta corretta: validate; compile; test; package; verify; install; deploy.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_021",
+    "question": "Quale tra le seguenti è la migliore definizione di Maven Archetype?",
+    "options": [
+      "runner fisico o virtuale che esegue un job GitHub Actions",
+      "toolkit/template per generare progetti Maven parametrizzati a partire da un modello",
+      "strumento per risolvere conflitti Git nella working directory",
+      "database che traccia Configuration Item e relazioni"
+    ],
+    "correct": [
+      1
+    ],
+    "multiple": true,
+    "tags": [
+      "Build automation, Maven e repository"
+    ],
+    "explanation": "Risposta corretta: toolkit/template per generare progetti Maven parametrizzati a partire da un modello.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_022",
+    "question": "In Maven, cosa sono plugin e Mojo?",
+    "options": [
+      "i plugin forniscono goal eseguibili e un Mojo è una unità/goal implementata da un plugin",
+      "i plugin sono container Docker e i Mojo sono immagini",
+      "i plugin sono issue GitHub e i Mojo sono milestone",
+      "i plugin sono branch remoti e i Mojo sono commit locali"
+    ],
+    "correct": [
+      0
+    ],
+    "multiple": true,
+    "tags": [
+      "Build automation, Maven e repository"
+    ],
+    "explanation": "Risposta corretta: i plugin forniscono goal eseguibili e un Mojo è una unità/goal implementata da un plugin.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_023",
+    "question": "Nel laboratorio Maven, perché il plugin Checkstyle viene configurato nella fase verify?",
+    "options": [
+      "per creare una milestone GitHub dopo ogni commit",
+      "per sostituire la Definition of Done dello Scrum Team",
+      "per eseguire l’analisi statica durante il lifecycle di build prima delle fasi successive",
+      "per fare il merge automatico dei branch remoti"
+    ],
+    "correct": [
+      2
+    ],
+    "multiple": true,
+    "tags": [
+      "Build automation, Maven e repository"
+    ],
+    "explanation": "Risposta corretta: per eseguire l’analisi statica durante il lifecycle di build prima delle fasi successive.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_024",
+    "question": "Quali tra le seguenti informazioni possono essere contenute nel pom.xml?",
+    "options": [
+      "dipendenze del progetto",
+      "stati del workflow GitHub Issues",
+      "plugin e configurazioni di build",
+      "coordinate del progetto come groupId, artifactId e version",
+      "inventory Ansible di default",
+      "Sprint Goal e Product Goal",
+      "profili di compilazione"
+    ],
+    "correct": [
+      0,
+      2,
+      3,
+      6
+    ],
+    "multiple": true,
+    "tags": [
+      "Build automation, Maven e repository"
+    ],
+    "explanation": "Risposta corretta: coordinate del progetto come groupId, artifactId e version; dipendenze del progetto; plugin e configurazioni di build; profili di compilazione.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_025",
+    "question": "Quali caratteristiche descrivono i test di accettazione secondo le slide?",
+    "options": [
+      "testano il SUT nel suo complesso",
+      "sono sempre analisi statica senza esecuzione",
+      "sono relativi agli use case e ai requisiti concordati con utente finale o cliente",
+      "servono a configurare il file pom.xml",
+      "sono anche conosciuti come UAT o End User Testing",
+      "vengono svolti con l’utente finale o cliente",
+      "sono limitati alla singola classe Java isolata"
+    ],
+    "correct": [
+      0,
+      2,
+      4,
+      5
+    ],
+    "multiple": true,
+    "tags": [
+      "Software testing, unit testing e analisi statica"
+    ],
+    "explanation": "Risposta corretta: sono anche conosciuti come UAT o End User Testing; sono relativi agli use case e ai requisiti concordati con utente finale o cliente; vengono svolti con l’utente finale o cliente; testano il SUT nel suo complesso.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_026",
+    "question": "Quali tra le seguenti sono attività del processo di test?",
+    "options": [
+      "deploy automatico in produzione",
+      "test design",
+      "git push",
+      "test implementation",
+      "test closure",
+      "test analysis",
+      "test execution",
+      "test planning",
+      "git fetch",
+      "Sprint Review"
+    ],
+    "correct": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "multiple": true,
+    "tags": [
+      "Software testing, unit testing e analisi statica"
+    ],
+    "explanation": "Risposta corretta: test planning; test analysis; test design; test implementation; test execution; test closure.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_027",
+    "question": "Quali tra le seguenti sono caratteristiche utili per rendere ripetibili i test di unità?",
+    "options": [
+      "modificare manualmente il server prima di ogni esecuzione",
+      "richiedere sempre un database di produzione reale",
+      "poter essere eseguiti automaticamente più volte con lo stesso risultato atteso",
+      "non dipendere da risorse esterne non gestite dal progetto",
+      "dipendere dall’ordine casuale dei test precedenti",
+      "usare fixture o sostituti controllati quando servono dipendenze"
+    ],
+    "correct": [
+      2,
+      3,
+      5
+    ],
+    "multiple": true,
+    "tags": [
+      "Software testing, unit testing e analisi statica"
+    ],
+    "explanation": "Risposta corretta: non dipendere da risorse esterne non gestite dal progetto; usare fixture o sostituti controllati quando servono dipendenze; poter essere eseguiti automaticamente più volte con lo stesso risultato atteso.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_028",
+    "question": "Quali funzionalità sono associate a JUnit nelle slide?",
+    "options": [
+      "inventory YAML per gruppi di host",
+      "suite o categories per selezionare test da eseguire",
+      "assertions per confrontare risultati attesi e prodotti",
+      "annotations per configurare l’ambiente di esecuzione del test",
+      "milestone per definire release GitHub",
+      "proxy remote repository per dipendenze Maven"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "multiple": true,
+    "tags": [
+      "Software testing, unit testing e analisi statica"
+    ],
+    "explanation": "Risposta corretta: annotations per configurare l’ambiente di esecuzione del test; suite o categories per selezionare test da eseguire; assertions per confrontare risultati attesi e prodotti.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_029",
+    "question": "Quale sequenza descrive correttamente il ciclo TDD?",
+    "options": [
+      "scrivere un test che fallisce, scrivere il codice minimo per farlo passare, rifattorizzare mantenendo i test verdi",
+      "compilare, installare, deployare, poi validare il Product Backlog",
+      "creare un branch, fare push, aprire una issue",
+      "scrivere tutto il codice, fare deploy in produzione, aggiungere test se resta tempo"
+    ],
+    "correct": [
+      0
+    ],
+    "multiple": true,
+    "tags": [
+      "Software testing, unit testing e analisi statica"
+    ],
+    "explanation": "Risposta corretta: scrivere un test che fallisce, scrivere il codice minimo per farlo passare, rifattorizzare mantenendo i test verdi.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_030",
+    "question": "Quale opzione espande correttamente CORRECT nel contesto delle boundary conditions?",
+    "options": [
+      "Customer, Owner, Requirement, Review, Estimate, Code, Team",
+      "Configuration, Orchestration, Repository, Runner, Event, Container, Trigger",
+      "Conformance, Ordering, Range, Reference, Existence, Cardinality, Time",
+      "Compile, Optimize, Release, Rollback, Execute, Commit, Test"
+    ],
+    "correct": [
+      2
+    ],
+    "multiple": true,
+    "tags": [
+      "Software testing, unit testing e analisi statica"
+    ],
+    "explanation": "Risposta corretta: Conformance, Ordering, Range, Reference, Existence, Cardinality, Time.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_031",
+    "question": "Quali tra i seguenti strumenti sono collegati all’analisi statica del codice nelle slide?",
+    "options": [
+      "Scrum Daily",
+      "SonarQube",
+      "PMD",
+      "Docker Swarm",
+      "Checkstyle",
+      "GitHub Milestone",
+      "SpotBugs o FindBugs",
+      "Maven Archetype"
+    ],
+    "correct": [
+      1,
+      2,
+      4,
+      6
+    ],
+    "multiple": true,
+    "tags": [
+      "Software testing, unit testing e analisi statica"
+    ],
+    "explanation": "Risposta corretta: Checkstyle; SpotBugs o FindBugs; PMD; SonarQube.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_032",
+    "question": "Quali tra le seguenti affermazioni su SonarQube sono vere?",
+    "options": [
+      "supporta continuous code inspection",
+      "è un hypervisor per creare VM",
+      "storicizza metriche e andamento della qualità",
+      "è un CVCS centralizzato",
+      "può integrarsi con Maven e strumenti di Continuous Integration",
+      "serve solo a definire Sprint Goal"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "multiple": true,
+    "tags": [
+      "Software testing, unit testing e analisi statica"
+    ],
+    "explanation": "Risposta corretta: storicizza metriche e andamento della qualità; supporta continuous code inspection; può integrarsi con Maven e strumenti di Continuous Integration.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_033",
+    "question": "Quali tra le seguenti sono best practices di Continuous Integration citate nelle slide?",
+    "options": [
+      "evitare log della build fallita",
+      "fixare subito una build in errore",
+      "rendere visibile a tutti lo stato del progetto",
+      "rilasciare solo una volta l’anno",
+      "integrare frequentemente gli sviluppi",
+      "creare una automated test suite",
+      "avere un processo di build and test breve",
+      "lavorare per lunghi periodi senza integrare"
+    ],
+    "correct": [
+      1,
+      2,
+      4,
+      5,
+      6
+    ],
+    "multiple": true,
+    "tags": [
+      "Continuous Integration, Delivery e artifact repository"
+    ],
+    "explanation": "Risposta corretta: integrare frequentemente gli sviluppi; creare una automated test suite; avere un processo di build and test breve; fixare subito una build in errore; rendere visibile a tutti lo stato del progetto.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_034",
+    "question": "Quali sono concetti fondamentali di GitHub Actions?",
+    "options": [
+      "workflow",
+      "steps",
+      "jobs",
+      "Definition of Done",
+      "events",
+      "Increment",
+      "Product Backlog",
+      "Sprint Goal",
+      "actions",
+      "runners"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      4,
+      8,
+      9
+    ],
+    "multiple": true,
+    "tags": [
+      "Continuous Integration, Delivery e artifact repository"
+    ],
+    "explanation": "Risposta corretta: workflow; events; jobs; steps; actions; runners.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_035",
+    "question": "Nel file YAML di GitHub Actions, cosa indica runs-on?",
+    "options": [
+      "il branch remoto su cui fare push",
+      "la milestone GitHub da chiudere",
+      "la fase del lifecycle Maven da eseguire",
+      "il tipo di runner su cui viene eseguito il job"
+    ],
+    "correct": [
+      3
+    ],
+    "multiple": true,
+    "tags": [
+      "Continuous Integration, Delivery e artifact repository"
+    ],
+    "explanation": "Risposta corretta: il tipo di runner su cui viene eseguito il job.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_036",
+    "question": "Nel comando mvn -B install --file pom.xml usato nel workflow GitHub Actions, cosa indica -B o --batch-mode?",
+    "options": [
+      "binary repository mode",
+      "branch mode",
+      "modalità non interattiva",
+      "build fallita"
+    ],
+    "correct": [
+      2
+    ],
+    "multiple": true,
+    "tags": [
+      "Continuous Integration, Delivery e artifact repository"
+    ],
+    "explanation": "Risposta corretta: modalità non interattiva.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_037",
+    "question": "Quali step compaiono nel workflow Java CI with Maven mostrato nelle slide?",
+    "options": [
+      "configurazione di un CMDB",
+      "deploy automatico obbligatorio in produzione",
+      "checkout del codice con actions/checkout",
+      "setup della JDK con actions/setup-java",
+      "creazione di uno Sprint Backlog",
+      "build con Maven tramite mvn install"
+    ],
+    "correct": [
+      2,
+      3,
+      5
+    ],
+    "multiple": true,
+    "tags": [
+      "Continuous Integration, Delivery e artifact repository"
+    ],
+    "explanation": "Risposta corretta: checkout del codice con actions/checkout; setup della JDK con actions/setup-java; build con Maven tramite mvn install.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_038",
+    "question": "Quali tra le seguenti affermazioni sui Maven repository manager sono vere?",
+    "options": [
+      "le milestone GitHub sostituiscono i repository Maven",
+      "gli hosted internal repositories possono condividere artefatti interni o di terze parti",
+      "i proxy remote repositories possono recuperare artefatti da repository esterni",
+      "gli snapshot artifacts possono essere rilasciati più volte durante lo sviluppo",
+      "i release artifacts solitamente vengono rilasciati una sola volta e mantenuti",
+      "un repository manager risolve i conflitti Git nella working directory"
+    ],
+    "correct": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "multiple": true,
+    "tags": [
+      "Continuous Integration, Delivery e artifact repository"
+    ],
+    "explanation": "Risposta corretta: i proxy remote repositories possono recuperare artefatti da repository esterni; gli hosted internal repositories possono condividere artefatti interni o di terze parti; gli snapshot artifacts possono essere rilasciati più volte durante lo sviluppo; i release artifacts solitamente vengono rilasciati una sola volta e mantenuti.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_039",
+    "question": "Quale tra le seguenti è una caratteristica utile degli artefatti conservati in un artifact repository?",
+    "options": [
+      "mantenere un riferimento al commit nel VCS da cui l’artefatto è stato creato",
+      "richiedere sempre un sistema operativo guest completo",
+      "sostituire il Product Backlog",
+      "contenere il Daily Scrum del giorno"
+    ],
+    "correct": [
+      0
+    ],
+    "multiple": true,
+    "tags": [
+      "Continuous Integration, Delivery e artifact repository"
+    ],
+    "explanation": "Risposta corretta: mantenere un riferimento al commit nel VCS da cui l’artefatto è stato creato.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_040",
+    "question": "Quali affermazioni distinguono correttamente Continuous Delivery e Continuous Deployment?",
+    "options": [
+      "Continuous Delivery elimina la necessità della Continuous Integration",
+      "nella Continuous Delivery il software è rilasciabile in produzione in qualsiasi momento",
+      "Continuous Delivery significa obbligatoriamente deploy automatico a ogni commit",
+      "Continuous Deployment è solo un altro nome per unit testing",
+      "nella Continuous Deployment le modifiche che superano i test automatizzati vengono passate automaticamente in produzione"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "multiple": true,
+    "tags": [
+      "Continuous Integration, Delivery e artifact repository"
+    ],
+    "explanation": "Risposta corretta: nella Continuous Delivery il software è rilasciabile in produzione in qualsiasi momento; nella Continuous Deployment le modifiche che superano i test automatizzati vengono passate automaticamente in produzione.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_041",
+    "question": "Quali tra le seguenti sono pratiche della deployment pipeline citate nelle slide?",
+    "options": [
+      "Deploy into a Copy of Production",
+      "Smoke-Test Your Deployments",
+      "Product Goal",
+      "Forking workflow",
+      "Deploy the Same Way to Every Environment",
+      "Only Build Your Binaries Once",
+      "git restore --staged"
+    ],
+    "correct": [
+      0,
+      1,
+      4,
+      5
+    ],
+    "multiple": true,
+    "tags": [
+      "Continuous Integration, Delivery e artifact repository"
+    ],
+    "explanation": "Risposta corretta: Only Build Your Binaries Once; Deploy the Same Way to Every Environment; Smoke-Test Your Deployments; Deploy into a Copy of Production.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_042",
+    "question": "Quale tra le seguenti è la migliore definizione di Continuous Testing?",
+    "options": [
+      "test manuale finale eseguito solo dopo il deploy in produzione",
+      "analisi statica eseguita una volta all’anno",
+      "esecuzione di test automatici in ogni fase della deployment pipeline per fornire feedback immediato",
+      "creazione di una VM guest per ogni test unitario"
+    ],
+    "correct": [
+      2
+    ],
+    "multiple": true,
+    "tags": [
+      "Continuous Integration, Delivery e artifact repository"
+    ],
+    "explanation": "Risposta corretta: esecuzione di test automatici in ogni fase della deployment pipeline per fornire feedback immediato.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_043",
+    "question": "Nel Configuration Management, cosa si intende per Configuration Item?",
+    "options": [
+      "evento giornaliero dello Scrum Team",
+      "singolo commit Git già pushato sul repository remoto",
+      "unità di configurazione gestibile individualmente, come server, software, router o servizio",
+      "fase compile del lifecycle Maven"
+    ],
+    "correct": [
+      2
+    ],
+    "multiple": true,
+    "tags": [
+      "Configuration Management e Ansible"
+    ],
+    "explanation": "Risposta corretta: unità di configurazione gestibile individualmente, come server, software, router o servizio.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_044",
+    "question": "Quale tra le seguenti è la funzione del CMDB?",
+    "options": [
+      "mostrare le issue GitHub in una board",
+      "tracciare Configuration Item e relazioni tra loro",
+      "scaricare immagini Docker da un registry",
+      "eseguire test JUnit in modalità batch"
+    ],
+    "correct": [
+      1
+    ],
+    "multiple": true,
+    "tags": [
+      "Configuration Management e Ansible"
+    ],
+    "explanation": "Risposta corretta: tracciare Configuration Item e relazioni tra loro.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_045",
+    "question": "Quali tra le seguenti pratiche o strumenti rientrano nel Modern Configuration Management citato nelle slide?",
+    "options": [
+      "Daily Scrum obbligatorio",
+      "deploy non tracciato su ogni server",
+      "inventory e configuration scripts",
+      "manuale Word statico come unico controllo",
+      "git e branch",
+      "package manager e build manager",
+      "testing and compliance",
+      "orchestration and configuration tools"
+    ],
+    "correct": [
+      2,
+      4,
+      5,
+      6,
+      7
+    ],
+    "multiple": true,
+    "tags": [
+      "Configuration Management e Ansible"
+    ],
+    "explanation": "Risposta corretta: git e branch; package manager e build manager; orchestration and configuration tools; testing and compliance; inventory e configuration scripts.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_046",
+    "question": "Quali tra le seguenti sono caratteristiche principali di Ansible?",
+    "options": [
+      "agentless",
+      "serve solo a creare milestone GitHub",
+      "richiede sempre un agente persistente su ogni nodo Linux",
+      "approccio graduale tramite script e playbook",
+      "è un sistema di versionamento centralizzato",
+      "strumento di Configuration Management e IT Automation",
+      "idempotente",
+      "leggero e performante"
+    ],
+    "correct": [
+      0,
+      3,
+      5,
+      6,
+      7
+    ],
+    "multiple": true,
+    "tags": [
+      "Configuration Management e Ansible"
+    ],
+    "explanation": "Risposta corretta: strumento di Configuration Management e IT Automation; agentless; idempotente; leggero e performante; approccio graduale tramite script e playbook.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_047",
+    "question": "Quali sono concetti chiave di Ansible?",
+    "options": [
+      "Playbooks",
+      "Sprint Review",
+      "Handlers",
+      "Tasks",
+      "Managed Nodes",
+      "Control Node",
+      "ArtifactId",
+      "Staging Area",
+      "Inventory",
+      "Product Goal",
+      "Modules"
+    ],
+    "correct": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      8,
+      10
+    ],
+    "multiple": true,
+    "tags": [
+      "Configuration Management e Ansible"
+    ],
+    "explanation": "Risposta corretta: Control Node; Managed Nodes; Inventory; Tasks; Handlers; Playbooks; Modules.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_048",
+    "question": "Quale tra le seguenti affermazioni sugli handlers Ansible è corretta?",
+    "options": [
+      "sono fasi del default lifecycle Maven",
+      "sono stati del workflow di un work item",
+      "vengono eseguiti a ogni commit Git per chiudere automaticamente le issue",
+      "vengono eseguiti quando un task notifica una modifica, ad esempio per riavviare un servizio solo se cambia la configurazione"
+    ],
+    "correct": [
+      3
+    ],
+    "multiple": true,
+    "tags": [
+      "Configuration Management e Ansible"
+    ],
+    "explanation": "Risposta corretta: vengono eseguiti quando un task notifica una modifica, ad esempio per riavviare un servizio solo se cambia la configurazione.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_049",
+    "question": "Quale comando Ansible viene usato per eseguire playbook sugli host definiti dall’inventory?",
+    "options": [
+      "ansible-inventory",
+      "git pull origin main",
+      "ansible-playbook",
+      "ansible-doc"
+    ],
+    "correct": [
+      2
+    ],
+    "multiple": true,
+    "tags": [
+      "Configuration Management e Ansible"
+    ],
+    "explanation": "Risposta corretta: ansible-playbook.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_050",
+    "question": "Quale opzione della command line Ansible indica il file di inventory da utilizzare?",
+    "options": [
+      "-b",
+      "-a",
+      "-i",
+      "-m"
+    ],
+    "correct": [
+      2
+    ],
+    "multiple": true,
+    "tags": [
+      "Configuration Management e Ansible"
+    ],
+    "explanation": "Risposta corretta: -i.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_051",
+    "question": "Quali affermazioni distinguono living infrastructure e immutable infrastructure?",
+    "options": [
+      "la living infrastructure usa solo CVCS",
+      "la immutable infrastructure coincide con un Daily Scrum",
+      "la living infrastructure mantiene la stessa istanza dedicata aggiornandola nel tempo",
+      "la immutable infrastructure distribuisce una nuova istanza read-only/configurata invece di modificare quella esistente",
+      "entrambe richiedono di non versionare configurazioni"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "multiple": true,
+    "tags": [
+      "Configuration Management e Ansible"
+    ],
+    "explanation": "Risposta corretta: la living infrastructure mantiene la stessa istanza dedicata aggiornandola nel tempo; la immutable infrastructure distribuisce una nuova istanza read-only/configurata invece di modificare quella esistente.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_052",
+    "question": "Quali tra le seguenti sono caratteristiche di un container?",
+    "options": [
+      "è gestibile indipendentemente dagli altri container",
+      "è portabile tra ambienti",
+      "è una milestone del progetto",
+      "è un processo isolato con i file necessari per eseguire l’applicazione",
+      "include sempre un sistema operativo guest completo con kernel e driver propri",
+      "condivide il kernel dell’host con altri container",
+      "richiede sempre un hypervisor di tipo VM"
+    ],
+    "correct": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "multiple": true,
+    "tags": [
+      "Virtualizzazione, container e infrastruttura"
+    ],
+    "explanation": "Risposta corretta: è un processo isolato con i file necessari per eseguire l’applicazione; condivide il kernel dell’host con altri container; è portabile tra ambienti; è gestibile indipendentemente dagli altri container.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_053",
+    "question": "Quale tra le seguenti affermazioni distingue correttamente VM e container?",
+    "options": [
+      "un container è solo un file pom.xml",
+      "VM e container sono entrambi commit Git salvati nel repository locale",
+      "un container include sempre più sistemi operativi guest, mentre una VM condivide sempre il kernel dell’host",
+      "una VM include un intero sistema operativo con kernel e driver, mentre un container è un processo isolato che condivide il kernel dell’host"
+    ],
+    "correct": [
+      3
+    ],
+    "multiple": true,
+    "tags": [
+      "Virtualizzazione, container e infrastruttura"
+    ],
+    "explanation": "Risposta corretta: una VM include un intero sistema operativo con kernel e driver, mentre un container è un processo isolato che condivide il kernel dell’host.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_054",
+    "question": "Quali tra le seguenti affermazioni su immagini e registry Docker sono corrette?",
+    "options": [
+      "Docker Hub è un esempio di registry",
+      "un’immagine è un template da cui avviare container",
+      "un registry conserva e distribuisce immagini",
+      "un’immagine è sempre una issue GitHub chiusa",
+      "un registry Docker è il Product Backlog dello Scrum Team",
+      "un’immagine sostituisce il CMDB"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "multiple": true,
+    "tags": [
+      "Virtualizzazione, container e infrastruttura"
+    ],
+    "explanation": "Risposta corretta: un’immagine è un template da cui avviare container; un registry conserva e distribuisce immagini; Docker Hub è un esempio di registry.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_055",
+    "question": "Quale tra le seguenti è la migliore definizione di orchestrazione dei container?",
+    "options": [
+      "scrivere una Definition of Done per lo Scrum Team",
+      "eseguire un singolo comando git diff nella working directory",
+      "coordinare deployment, scheduling, scaling, networking e recupero da guasti di container su più nodi",
+      "creare un template Maven da un archetype"
+    ],
+    "correct": [
+      2
+    ],
+    "multiple": true,
+    "tags": [
+      "Virtualizzazione, container e infrastruttura"
+    ],
+    "explanation": "Risposta corretta: coordinare deployment, scheduling, scaling, networking e recupero da guasti di container su più nodi.",
+    "section": "nuovo"
+  },
+  {
+    "id": "mtss_pred_056",
+    "question": "Quale tra le seguenti affermazioni su Docker Swarm è corretta?",
+    "options": [
+      "è un CVCS usato per repository remoti",
+      "è il lifecycle clean di Maven",
+      "è una tecnologia di orchestrazione nativa di Docker",
+      "è una categoria JUnit per selezionare test"
+    ],
+    "correct": [
+      2
+    ],
+    "multiple": true,
+    "tags": [
+      "Virtualizzazione, container e infrastruttura"
+    ],
+    "explanation": "Risposta corretta: è una tecnologia di orchestrazione nativa di Docker.",
+    "section": "nuovo"
   }
 ]

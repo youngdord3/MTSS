@@ -9,6 +9,7 @@ let selectedIndices = [];
 let userErrors = [];
 let isTrainingMode = false;
 let selectedTags = new Set();
+let selectedSections = new Set(['vecchio', 'nuovo']);
 
 const STORAGE_KEY = 'quiz_errors';
 
@@ -22,6 +23,8 @@ const countDisplay = document.getElementById('count-display');
 const availableCount = document.getElementById('available-count');
 const setupError = document.getElementById('setup-error');
 const startQuizBtn = document.getElementById('start-quiz-btn');
+const secVecchioBtn = document.getElementById('sec-vecchio-btn');
+const secNuovoBtn = document.getElementById('sec-nuovo-btn');
 const startTrainingSetup = document.getElementById('start-training-setup-btn');
 const errorsCountBadge = document.getElementById('errors-count-badge');
 const trainingBanner = document.getElementById('training-banner');
@@ -83,7 +86,32 @@ function updatePersistentBadge() {
     errorsCountBadge.classList.toggle('hidden', count === 0);
 }
 
-// ─── TAGS & SETUP ─────────────────────────────────────────────────────────────
+// ─── TAGS & SECTIONS SETUP ──────────────────────────────────────────────────────
+if (secVecchioBtn) {
+    secVecchioBtn.onclick = () => {
+        if (selectedSections.has('vecchio')) {
+            selectedSections.delete('vecchio');
+            secVecchioBtn.classList.remove('active');
+        } else {
+            selectedSections.add('vecchio');
+            secVecchioBtn.classList.add('active');
+        }
+        updateSliderMax();
+    };
+}
+if (secNuovoBtn) {
+    secNuovoBtn.onclick = () => {
+        if (selectedSections.has('nuovo')) {
+            selectedSections.delete('nuovo');
+            secNuovoBtn.classList.remove('active');
+        } else {
+            selectedSections.add('nuovo');
+            secNuovoBtn.classList.add('active');
+        }
+        updateSliderMax();
+    };
+}
+
 function getAllTags() {
     const tags = new Set();
     allQuestions.forEach(q => (q.tags || []).forEach(t => tags.add(t)));
@@ -91,8 +119,11 @@ function getAllTags() {
 }
 
 function getFilteredCount() {
-    if (selectedTags.size === 0) return 0;
-    return allQuestions.filter(q => (q.tags || []).some(t => selectedTags.has(t))).length;
+    if (selectedTags.size === 0 || selectedSections.size === 0) return 0;
+    return allQuestions.filter(q => 
+        (q.tags || []).some(t => selectedTags.has(t)) && 
+        selectedSections.has(q.section || 'vecchio')
+    ).length;
 }
 
 function renderTags() {
@@ -181,7 +212,7 @@ startQuizBtn.onclick = () => {
     resetCounters();
 
     const pool = allQuestions
-        .filter(q => (q.tags || []).some(t => selectedTags.has(t)))
+        .filter(q => (q.tags || []).some(t => selectedTags.has(t)) && selectedSections.has(q.section || 'vecchio'))
         .sort(() => Math.random() - 0.5)
         .slice(0, parseInt(slider.value));
 
