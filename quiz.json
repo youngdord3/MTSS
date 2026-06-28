@@ -2388,7 +2388,7 @@
         "correct": [
             1
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Software testing, unit testing e analisi statica"
         ],
@@ -2470,7 +2470,7 @@
         "correct": [
             3
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Build automation, Maven e repository"
         ],
@@ -2489,7 +2489,7 @@
         "correct": [
             0
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Issue Tracking System, project management e Scrum"
         ],
@@ -2507,7 +2507,7 @@
         "correct": [
             0
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Configuration Management e Ansible"
         ],
@@ -2525,7 +2525,7 @@
         "correct": [
             0
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Issue Tracking System, project management e Scrum"
         ],
@@ -2592,7 +2592,7 @@
         "correct": [
             0
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Issue Tracking System, project management e Scrum"
         ],
@@ -2611,7 +2611,7 @@
         "correct": [
             0
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Virtualizzazione, container e infrastruttura"
         ],
@@ -2659,7 +2659,7 @@
         "correct": [
             1
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Build automation, Maven e repository"
         ],
@@ -2851,7 +2851,7 @@
         "correct": [
             1
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Issue Tracking System, project management e Scrum"
         ],
@@ -2895,7 +2895,7 @@
         "correct": [
             1
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Issue Tracking System, project management e Scrum"
         ],
@@ -2938,7 +2938,7 @@
         "correct": [
             3
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Issue Tracking System, project management e Scrum"
         ],
@@ -2980,7 +2980,7 @@
         "correct": [
             1
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Issue Tracking System, project management e Scrum"
         ],
@@ -2999,7 +2999,7 @@
         "correct": [
             1
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Issue Tracking System, project management e Scrum"
         ],
@@ -3043,7 +3043,7 @@
         "correct": [
             2
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Version Control System e Git"
         ],
@@ -3062,7 +3062,7 @@
         "correct": [
             2
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Version Control System e Git"
         ],
@@ -3104,7 +3104,7 @@
         "correct": [
             0
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Version Control System e Git"
         ],
@@ -3123,7 +3123,7 @@
         "correct": [
             1
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Version Control System e Git"
         ],
@@ -3165,7 +3165,7 @@
         "correct": [
             0
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Version Control System e Git"
         ],
@@ -3184,7 +3184,7 @@
         "correct": [
             2
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Build automation, Maven e repository"
         ],
@@ -3263,7 +3263,7 @@
         "correct": [
             1
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Build automation, Maven e repository"
         ],
@@ -3282,7 +3282,7 @@
         "correct": [
             0
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Build automation, Maven e repository"
         ],
@@ -3301,7 +3301,7 @@
         "correct": [
             2
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Build automation, Maven e repository"
         ],
@@ -3446,7 +3446,7 @@
         "correct": [
             0
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Software testing, unit testing e analisi statica"
         ],
@@ -3465,7 +3465,7 @@
         "correct": [
             2
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Software testing, unit testing e analisi statica"
         ],
@@ -3590,7 +3590,7 @@
         "correct": [
             3
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Continuous Integration, Delivery e artifact repository"
         ],
@@ -3609,7 +3609,7 @@
         "correct": [
             2
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Continuous Integration, Delivery e artifact repository"
         ],
@@ -3675,7 +3675,7 @@
         "correct": [
             0
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Continuous Integration, Delivery e artifact repository"
         ],
@@ -3740,7 +3740,7 @@
         "correct": [
             2
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Continuous Integration, Delivery e artifact repository"
         ],
@@ -3759,7 +3759,7 @@
         "correct": [
             2
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Configuration Management e Ansible"
         ],
@@ -3778,7 +3778,7 @@
         "correct": [
             1
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Configuration Management e Ansible"
         ],
@@ -3883,7 +3883,7 @@
         "correct": [
             3
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Configuration Management e Ansible"
         ],
@@ -3902,7 +3902,7 @@
         "correct": [
             2
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Configuration Management e Ansible"
         ],
@@ -3921,7 +3921,7 @@
         "correct": [
             2
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Configuration Management e Ansible"
         ],
@@ -3986,7 +3986,7 @@
         "correct": [
             3
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Virtualizzazione, container e infrastruttura"
         ],
@@ -4028,7 +4028,7 @@
         "correct": [
             2
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Virtualizzazione, container e infrastruttura"
         ],
@@ -4047,7 +4047,7 @@
         "correct": [
             2
         ],
-        "multiple": true,
+        "multiple": false,
         "tags": [
             "Virtualizzazione, container e infrastruttura"
         ],
