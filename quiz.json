@@ -19,7 +19,8 @@
             "SCRUM"
         ],
         "explanation": "SCRUM è noto per essere leggero, semplice da capire ma difficile da padroneggiare a causa del profondo cambiamento culturale richiesto.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "id": "form-097",
@@ -39,7 +40,8 @@
             "Generale"
         ],
         "explanation": "INVEST sta per Indipendenti, Negoziabili, Valutabili, Estimabili, Small e Testabili: criteri per un'ottima User Story.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "id": "form-025",
@@ -58,7 +60,8 @@
             "Testing"
         ],
         "explanation": "Il test non può dimostrare l'assenza assoluta di difetti, ma solo la loro presenza (principio dell'impossibilità del test esaustivo).",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "question": "Cosa si intende per \"tracciabilità\" nella Configuration Management",
@@ -76,7 +79,8 @@
         ],
         "explanation": "La tracciabilità in CM significa poter risalire a come è stato costruito un ambiente (quali versioni di dipendenze, script, configurazioni) e confrontare due versioni per individuare le differenze (diff). È fondamentale per il debugging e per gli audit.",
         "id": "local-016",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "configuration_management"
     },
     {
         "id": "form-052",
@@ -94,7 +98,8 @@
             "Version Control"
         ],
         "explanation": "SVN (Subversion) è un sistema di controllo di versione centralizzato (CVCS). Git e Mercurial sono distribuiti (DVCS).",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "vcs_git"
     },
     {
         "id": "form-004",
@@ -122,7 +127,8 @@
             "Infrastruttura"
         ],
         "explanation": "Le infrastrutture 'living' mantengono le istanze nel tempo, ma rischiano il 'configuration drift' e sono difficili da riprodurre da zero.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "virtualization_containers"
     },
     {
         "id": "form-068",
@@ -146,7 +152,8 @@
             "CI/CD"
         ],
         "explanation": "La compilazione del codice sorgente è un compito del Build Tool (come Maven), non dell'Artifact Repository.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "configuration_management"
     },
     {
         "id": "form-053",
@@ -166,7 +173,8 @@
             "Testing"
         ],
         "explanation": "I test di performance sono dinamici (eseguiti durante il run) e non funzionali (valutano il 'come' funziona il sistema, non 'cosa' fa).",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-057",
@@ -186,7 +194,8 @@
             "Container"
         ],
         "explanation": "Le immagini nei container possono e devono essere condivise (es. tramite Docker Hub), a differenza di quanto affermato.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "virtualization_containers"
     },
     {
         "question": "Quali tra le seguenti affermazioni relative alla Continuous Delivery NON è vera?",
@@ -205,7 +214,8 @@
         ],
         "explanation": "In Continuous Delivery il principio fondamentale è 'build once, deploy many': il binario viene prodotto una sola volta e promosso tra gli ambienti. Rieseguire la build per ogni ambiente rompe la garanzia che lo stesso artefatto sia stato testato end-to-end.",
         "id": "local-002",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "vcs_git"
     },
     {
         "id": "form-082",
@@ -228,7 +238,8 @@
             "Testing"
         ],
         "explanation": "L'analisi statica viene fatta esaminando il codice sorgente senza eseguirlo (statico) e avendo accesso al codice (white box).",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "question": "Quale delle seguenti affermazioni è FALSA riguardo ai repository remoti in Maven",
@@ -247,7 +258,8 @@
         ],
         "explanation": "I repository remoti (come Maven Central) non garantiscono sicurezza assoluta: esistono casi di dependency confusion e supply chain attack. Per questo le aziende usano repository privati (Nexus, Artifactory) dove le librerie vengono scansionate prima di essere rese disponibili internamente.",
         "id": "local-018",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "build_maven"
     },
     {
         "id": "form-069",
@@ -265,7 +277,8 @@
             "Container"
         ],
         "explanation": "Docker Networking permette ai container di comunicare isolatamente tramite driver come bridge o overlay, garantendo flessibilità.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "virtualization_containers"
     },
     {
         "id": "form-035",
@@ -284,7 +297,8 @@
             "Testing"
         ],
         "explanation": "In un DVCS (Distributed VCS) ogni utente ha un repository locale completo, consentendo il lavoro offline anche se il nodo centrale cade.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "vcs_git"
     },
     {
         "id": "form-085",
@@ -303,7 +317,8 @@
             "Testing"
         ],
         "explanation": "La Continuous Integration prevede l'allineamento frequente (molto più che giornaliero) del codice verso il repository condiviso (mainline).",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-037",
@@ -323,7 +338,8 @@
             "Infrastruttura"
         ],
         "explanation": "Il Traditional Configuration Management era spesso un processo burocratico e troppo lento per i ritmi di sviluppo moderni (Agile/DevOps).",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "virtualization_containers"
     },
     {
         "id": "form-061",
@@ -342,7 +358,8 @@
             "Testing"
         ],
         "explanation": "Il principio base della CI è che se la build fallisce, la priorità assoluta del team è risolverlo immediatamente prima di proseguire.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-084",
@@ -362,7 +379,8 @@
             "Testing"
         ],
         "explanation": "La Continuous Delivery garantisce che il software sia sempre in uno stato rilasciabile in produzione in qualsiasi momento.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-043",
@@ -391,7 +409,8 @@
             "Testing"
         ],
         "explanation": "I test devono verificare performance, risultati attesi, condizioni al limite (boundary), forzatura errori e controlli incrociati.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-016",
@@ -414,7 +433,8 @@
             "Testing"
         ],
         "explanation": "I Version Control System si suddividono principalmente in Locali, Centralizzati e Distribuiti.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "vcs_git"
     },
     {
         "id": "form-073",
@@ -433,7 +453,8 @@
             "Build Tools"
         ],
         "explanation": "I plugin di Maven forniscono funzionalità, mentre i Mojo (Maven plain Old Java Object) sono i goal (task) specifici eseguiti dal plugin.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "build_maven"
     },
     {
         "id": "form-078",
@@ -465,7 +486,8 @@
             "Project Management"
         ],
         "explanation": "Il team di sviluppo usa l'ITS principalmente per documentare, avviare e completare i task, e ricevere notifiche sui task assegnati.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "question": "A quali categorie appartengono i test di unità?",
@@ -491,7 +513,8 @@
         ],
         "explanation": "I test di unità sono: Verifica (controllano che il codice rispetti la specifica tecnica), Funzionali (testano una funzionalità specifica), Dinamici (richiedono l'esecuzione del codice) e White box (il tester conosce l'implementazione interna del SUT).",
         "id": "local-006",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-036",
@@ -510,7 +533,8 @@
             "SCRUM"
         ],
         "explanation": "Definire caratteristiche, date e contenuti dei rilasci è responsabilità del Product Owner, non del Development Team.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "question": "Concetti relativi al Workflow",
@@ -530,7 +554,8 @@
         ],
         "explanation": "Il Workflow definisce gli stati e le transizioni (non le priorità) che un work item attraversa nel suo ciclo di vita (es. New → In Progress → Review → Done). Implementa il processo da seguire per completare un'attività, non solo per registrarla.",
         "id": "local-017",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "question": "Quali sono le caratteristiche dell'utilizzo di un server fisico",
@@ -555,7 +580,8 @@
         ],
         "explanation": "Un server fisico è dedicato a una singola applicazione: i deploy sono lenti perché richiedono configurazione manuale, spreca risorse poiché non le condivide, è costoso in acquisto e manutenzione, e ospitare più app sullo stesso OS è complicato per i conflitti di dipendenze.",
         "id": "local-001",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "virtualization_containers"
     },
     {
         "id": "form-077",
@@ -585,7 +611,8 @@
             "Project Management"
         ],
         "explanation": "L'amministratore dell'ITS si occupa di creare i progetti, gestire gli utenti, i ruoli e configurare il tipo di work item e il modello della board.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "id": "form-038",
@@ -604,7 +631,8 @@
             "Testing"
         ],
         "explanation": "L'acronimo CORRECT per le boundary conditions sta per: Conformance, Ordering, Range, Reference, Existence, Cardinality, Time.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-066",
@@ -630,7 +658,8 @@
             "Build Tools"
         ],
         "explanation": "Gli errori nella Build Automation spesso derivano da percorsi file errati, dipendenze mancanti e versioni del compilatore incompatibili.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "build_maven"
     },
     {
         "id": "form-081",
@@ -656,7 +685,8 @@
             "Testing"
         ],
         "explanation": "La CI richiede VCS, build automatiche con test, e il commitment di tutto il team per l'integrazione continua del codice.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "vcs_git"
     },
     {
         "id": "form-034-a",
@@ -679,7 +709,8 @@
             "Build Tools"
         ],
         "explanation": "Launch non è una fase del ciclo di vita standard (default) di Maven. Le fasi includono validate, compile, test, package, verify, install, deploy.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "build_maven"
     },
     {
         "id": "form-034-b",
@@ -698,7 +729,8 @@
             "Build Tools"
         ],
         "explanation": "Verify è una fase all'interno del lifecycle 'default', non un lifecycle a sé stante come clean, default o site.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "build_maven"
     },
     {
         "id": "form-098",
@@ -734,7 +766,8 @@
             "Project Management"
         ],
         "explanation": "L'ITS serve a tracciare task, ore, assegnare compiti, condividere info e dare priorità. Non esegue build né testa o ospita codice binario.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "question": "Concetti relativi al work item",
@@ -768,7 +801,8 @@
         ],
         "explanation": "Un work item è l'unità atomica di lavoro in un progetto: ha un ID univoco, appartiene a un progetto, presenta stati, priorità, tipologie (bug, feature, task), stime temporali e date (apertura/rilascio). Non descrive il percorso di vita (quello è il workflow) né fornisce una visione d'insieme (quello è la board/dashboard).",
         "id": "local-014",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "id": "form-058",
@@ -787,7 +821,8 @@
             "Generale"
         ],
         "explanation": "Findbugs (ora SpotBugs) è un analizzatore statico focalizzato sulla ricerca di veri e propri bug e pattern di errori nel bytecode Java.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-101",
@@ -809,7 +844,8 @@
             "Testing"
         ],
         "explanation": "Nella CI, l'integrazione deve essere molto frequente e i processi di build/test devono essere sufficientemente veloci da non bloccare il team.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "question": "Quali sono le caratteristiche di un container",
@@ -838,7 +874,8 @@
         ],
         "explanation": "I container condividono il kernel dell'host (non virtualizzano l'hardware come le VM) quindi non necessitano di hypervisor e sono più veloci da avviare. Virtualizzano il sistema operativo tramite namespace e cgroups. Ogni container è isolato dagli altri e dall'host, e non conosce l'ambiente circostante.",
         "id": "local-019",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "virtualization_containers"
     },
     {
         "question": "Cosa fa VMware",
@@ -862,7 +899,8 @@
         ],
         "explanation": "VMware è una piattaforma di virtualizzazione basata su hypervisor che permette di creare e configurare VM, dimensionarle con le risorse necessarie, monitorarne lo stato e centralizzare la gestione di tutte le VM da un'unica console (vCenter).",
         "id": "local-005",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "virtualization_containers"
     },
     {
         "id": "form-099",
@@ -882,7 +920,8 @@
             "SCRUM"
         ],
         "explanation": "La DoD stabilisce quando un task è completo, ma portarlo nello stato 'close' è solitamente un'azione manuale, non avviene in automatico.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "id": "form-021",
@@ -901,7 +940,8 @@
             "Generale"
         ],
         "explanation": "Checkstyle è lo strumento principale utilizzato per verificare che il codice Java rispetti le convenzioni e gli standard di formattazione.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-010",
@@ -919,7 +959,8 @@
             "Configuration Management"
         ],
         "explanation": "Idempotenza significa che applicando un'operazione una o infinite volte, lo stato finale del sistema non cambia.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "configuration_management"
     },
     {
         "id": "form-041",
@@ -938,7 +979,8 @@
             "SCRUM"
         ],
         "explanation": "Il ROI (Return of Investment) è responsabilità esclusiva del Product Owner, non dello Scrum Master.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "id": "form-071",
@@ -961,7 +1003,8 @@
             "Testing"
         ],
         "explanation": "Nel processo di CI si eseguono tipicamente analisi statica, test di unità e test di integrazione interna. Test lenti (UI, performance) si fanno dopo.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-001",
@@ -988,7 +1031,8 @@
             "Infrastruttura"
         ],
         "explanation": "Nel push model, il server centrale 'spinge' (invia) la configurazione verso gli asset in modo proattivo e centralizzato.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "configuration_management"
     },
     {
         "id": "form-008",
@@ -1007,7 +1051,8 @@
             "Version Control"
         ],
         "explanation": "Un Commit fissa i cambiamenti in un'istantanea (snapshot) salvata nel repository locale.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "vcs_git"
     },
     {
         "id": "form-064",
@@ -1037,7 +1082,8 @@
             "Infrastruttura"
         ],
         "explanation": "GitHub Actions scala grazie ad esecutori cloud/distribuiti, usa YAML, si integra in GitHub ed è adatto a progetti piccoli come a quelli complessi.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "vcs_git"
     },
     {
         "id": "form-051",
@@ -1056,7 +1102,8 @@
             "Infrastruttura"
         ],
         "explanation": "I conflitti su Git vengono rilevati e devono essere risolti esclusivamente nella propria working directory (in locale) prima di completare il merge.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "vcs_git"
     },
     {
         "id": "form-054",
@@ -1074,7 +1121,8 @@
             "SCRUM"
         ],
         "explanation": "Un elemento del backlog NON ha una durata fissa massima di 8 ore (quella è la granularità di un task nello sprint backlog).",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "question": "Quali sono le caratteristiche di un immutable infrastructure",
@@ -1099,7 +1147,8 @@
         ],
         "explanation": "In un'infrastruttura immutabile non si modificano i server esistenti: ad ogni cambiamento si costruisce una nuova immagine e si sostituisce l'istanza. Questo elimina il configuration drift (le istanze sono sempre identiche all'immagine) ma il processo di rebuild è più lento rispetto a una modifica in-place.",
         "id": "local-015",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "virtualization_containers"
     },
     {
         "question": "Nel framework SCRUM, quale tra i seguenti NON è un ruolo del Product Owner?",
@@ -1118,7 +1167,8 @@
         ],
         "explanation": "Il responsabile dell'adozione dei valori e delle pratiche SCRUM è lo Scrum Master, non il Product Owner. Il PO è invece responsabile del Product Backlog, della prioritizzazione e della visione del prodotto verso il committente.",
         "id": "local-009",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "id": "form-050",
@@ -1137,7 +1187,8 @@
             "Build Tools"
         ],
         "explanation": "Il file pom.xml (Project Object Model) nella root è il cuore di un progetto Maven e ne definisce la build e le dipendenze.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "build_maven"
     },
     {
         "id": "form-092",
@@ -1154,7 +1205,8 @@
             "Testing"
         ],
         "explanation": "La validazione si chiede 'Stiamo costruendo il prodotto giusto?' (fit for purpose), verificando se risponde alle vere necessità del cliente.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-046",
@@ -1178,7 +1230,8 @@
             "Infrastruttura"
         ],
         "explanation": "Git incentiva fortemente l'uso dei branch, la maggior parte delle operazioni è locale (es. commit) ed essendo distribuito non ha single point of failure.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "vcs_git"
     },
     {
         "id": "form-055",
@@ -1199,7 +1252,8 @@
             "Testing"
         ],
         "explanation": "I test funzionali verificano i requisiti (il 'cosa'). Performance e analisi statica misurano il 'come' (non funzionali/strutturali).",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-033",
@@ -1223,7 +1277,8 @@
             "Infrastruttura"
         ],
         "explanation": "Nelle VM il sistema 'guest' viene chiamato istanza, salvato come file sul server e gira un sistema operativo completo con dipendenze.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "virtualization_containers"
     },
     {
         "id": "form-075",
@@ -1242,7 +1297,8 @@
             "Testing"
         ],
         "explanation": "Il test di integrazione verifica proprio l'interazione e il rispetto dei contratti (interfacce) tra due o più moduli che comunicano.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-091",
@@ -1260,7 +1316,8 @@
             "Configuration Management"
         ],
         "explanation": "Riproducibilità significa che il processo è completamente automatizzato e ogni esecuzione genera sempre un ambiente identico al precedente.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "configuration_management"
     },
     {
         "id": "form-029",
@@ -1280,7 +1337,8 @@
             "Infrastruttura"
         ],
         "explanation": "Maven usa plugin standard per le logiche di build, permettendo di riutilizzare le stesse convenzioni senza dover reinventare gli script per ogni progetto.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "build_maven"
     },
     {
         "id": "form-090",
@@ -1299,7 +1357,8 @@
             "Testing"
         ],
         "explanation": "A TRIP sta per Automatic, Thorough, Repeatable, Independent e Professional: i principi guida per scrivere buoni test di unità.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-093",
@@ -1320,7 +1379,8 @@
             "Testing"
         ],
         "explanation": "Nei test di accettazione (UAT) il sistema è considerato una black box (ci interessa solo l'output) e verificano l'accettazione finale.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-070",
@@ -1344,7 +1404,8 @@
             "Infrastruttura"
         ],
         "explanation": "Il sistema Host è il server fisico Intel/AMD, detto compute node, che esegue l'Hypervisor per gestire le VM.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "virtualization_containers"
     },
     {
         "id": "form-074",
@@ -1370,7 +1431,8 @@
             "Testing"
         ],
         "explanation": "Il 'Test optimization' non è una fase formale standard del processo di test teorizzato da ISTQB.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-105",
@@ -1389,7 +1451,8 @@
             "Testing"
         ],
         "explanation": "L'Acceptance testing (test di accettazione) è il test finale lato utente e serve proprio a validare se il prodotto fa ciò che serve (validazione).",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-060",
@@ -1409,7 +1472,8 @@
             "Testing"
         ],
         "explanation": "La Deployment Pipeline modella l'intero percorso dalla build al rilascio tramite fasi e 'gates' (cancelli di verifica automatica).",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-040",
@@ -1427,7 +1491,8 @@
             "Container"
         ],
         "explanation": "Docker Swarm è il sistema di orchestrazione nativo di Docker, utile per unire più nodi in un unico cluster virtuale.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "virtualization_containers"
     },
     {
         "id": "form-104",
@@ -1450,7 +1515,8 @@
             "Project Management"
         ],
         "explanation": "Maven è principalmente un Build Tool basato sul Build Lifecycle e si occupa nativamente del Dependency Management.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "build_maven"
     },
     {
         "id": "form-018",
@@ -1470,7 +1536,8 @@
             "CI/CD"
         ],
         "explanation": "L'Artifact Repository è il 'magazzino' progettato appositamente per conservare file binari compilati e rilasciabili (artefatti).",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "vcs_git"
     },
     {
         "id": "form-009",
@@ -1490,7 +1557,8 @@
             "CI/CD"
         ],
         "explanation": "I repository Snapshot permettono di sovrascrivere continuamente la stessa versione (in via di sviluppo). Quelli Release sono immutabili.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "ci_cd_artifacts"
     },
     {
         "id": "form-047",
@@ -1513,7 +1581,8 @@
             "Generale"
         ],
         "explanation": "L'analisi statica verifica lo stile di programmazione e calcola metriche formali (complessità, linee, duplicazioni), senza eseguire l'app.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-003",
@@ -1537,7 +1606,8 @@
             "CI/CD"
         ],
         "explanation": "GitLab flow spesso unisce l'uso del branch master (sempre pronto) a pratiche di deploy e feature branch, garantendo sviluppo veloce.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "vcs_git"
     },
     {
         "id": "form-019",
@@ -1555,7 +1625,8 @@
             "Version Control"
         ],
         "explanation": "Il Distributed VCS (DVCS come Git) è diventato lo standard de facto e il più utilizzato nell'industria.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "vcs_git"
     },
     {
         "id": "form-063",
@@ -1578,7 +1649,8 @@
             "Testing"
         ],
         "explanation": "Avere un test associato per ogni requisito è una metrica di copertura (coverage), ma non fa parte dei Sette Principi del Testing universali.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-048",
@@ -1605,7 +1677,8 @@
             "Testing"
         ],
         "explanation": "La CDelivery automatizza tutto fino all'ambiente di pre-produzione, permettendo rilasci continui e sicuri 'su richiesta' premendo un bottone.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-042",
@@ -1624,7 +1697,8 @@
             "SCRUM"
         ],
         "explanation": "SonarQube analizza la qualità nel tempo, tracciando trend e misurando il 'debito tecnico' a ogni commit o build.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "question": "Quale frase descrive la Build Automation",
@@ -1643,7 +1717,8 @@
         ],
         "explanation": "La Build Automation automatizza le fasi ripetibili e verificabili: compilazione del sorgente, packaging dei binari ed esecuzione della suite di test. L'obiettivo è eliminare gli errori umani e rendere il processo riproducibile.",
         "id": "local-004",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "question": "Quale tra le seguenti è la definizione migliore per Analisi statica del codice?",
@@ -1662,7 +1737,8 @@
         ],
         "explanation": "L'analisi statica esamina il codice sorgente senza eseguirlo (strumenti come PMD, Checkstyle, SonarQube). Permette di trovare bug, code smell e violazioni di stile in fase di sviluppo, prima ancora che il software venga avviato.",
         "id": "local-007",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-044",
@@ -1688,7 +1764,8 @@
             "Project Management"
         ],
         "explanation": "Il pom.xml contiene le 'coordinate' del progetto (GAV), le dipendenze da scaricare e le configurazioni per i plugin.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "build_maven"
     },
     {
         "id": "form-024",
@@ -1705,7 +1782,8 @@
             "Container"
         ],
         "explanation": "In Linux/Docker, i Namespace garantiscono l'isolamento dei processi per ogni container (reti, file, PID) separandoli dal resto.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "virtualization_containers"
     },
     {
         "id": "form-012",
@@ -1727,7 +1805,8 @@
             "Testing"
         ],
         "explanation": "Falso: I test vengono sempre eseguiti e considerati all'interno della sprint, altrimenti l'elemento non rispetta la Definition of Done.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "id": "form-103",
@@ -1746,7 +1825,8 @@
             "Generale"
         ],
         "explanation": "PMD è focalizzato proprio sulla ricerca di cattive pratiche nel codice come variabili non usate e blocchi catch vuoti.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-088",
@@ -1774,7 +1854,8 @@
             "Testing"
         ],
         "explanation": "Un Artifact Repository interno offre stabilità (indipendenza dai server pubblici), sicurezza (controllo degli accessi) e collaborazione semplificata.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-065",
@@ -1793,7 +1874,8 @@
             "SCRUM"
         ],
         "explanation": "Il Project Manager è una figura tipica delle metodologie a cascata (Waterfall); non esiste nativamente nel framework Scrum.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "id": "form-072",
@@ -1812,7 +1894,8 @@
             "Testing"
         ],
         "explanation": "L'orchestrazione automatizza e coordina deployment, scaling e networking di molteplici container in architetture distribuite complesse.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "virtualization_containers"
     },
     {
         "id": "form-049",
@@ -1834,7 +1917,8 @@
             "Generale"
         ],
         "explanation": "Un buon processo di build deve essere Ripetibile (stessi input = stesso output), Completo (indipendente) e Portabile tra ambienti.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "configuration_management"
     },
     {
         "id": "form-039",
@@ -1854,7 +1938,8 @@
             "Project Management"
         ],
         "explanation": "La Board (es. Kanban) nell'ITS permette di visualizzare in modo interattivo e flessibile l'avanzamento visivo dei task.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "id": "form-102",
@@ -1875,7 +1960,8 @@
             "Testing"
         ],
         "explanation": "Il ciclo TDD è 'Red-Green-Refactor': Scrivi il test (fallisce), scrivi il codice (passa), poi ripulisci/rifattorizza il codice.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-106",
@@ -1901,7 +1987,8 @@
             "Testing"
         ],
         "explanation": "La Continuous Delivery sfrutta intensamente Artifact Repository, Configuration Management e Continuous Integration come fondamenta.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "configuration_management"
     },
     {
         "id": "form-011",
@@ -1922,7 +2009,8 @@
             "Project Management"
         ],
         "explanation": "I test di unità sono eseguiti sul codice sorgente direttamente dagli sviluppatori, testando il componente più piccolo isolabile.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "id": "form-100",
@@ -1940,7 +2028,8 @@
             "Testing"
         ],
         "explanation": "Il System Testing (test di sistema globale) può adottare approcci sia White Box (se si indaga l'integrazione) che Black Box.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "question": "Quali sono le caratteristiche di Ansible",
@@ -1979,7 +2068,8 @@
         ],
         "explanation": "Ansible è agentless e leggero: i nodi gestiti non necessitano di Ansible installato (bastano Python e SSH per Linux). I playbook sono scritti in YAML e composti da task e handler. Un handler viene eseguito solo se notificato da una task (es. riavvio servizio dopo modifica config). L'inventory elenca i server gestiti.",
         "id": "local-013",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "configuration_management"
     },
     {
         "id": "form-015",
@@ -1999,7 +2089,8 @@
             "Testing"
         ],
         "explanation": "Il framework di Unit Test si concentra sul testing di unità isolate tramite mock e asserzioni; non deve avviare l'intero sistema globale.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-007",
@@ -2026,7 +2117,8 @@
             "Infrastruttura"
         ],
         "explanation": "Nel pull model gli asset interrogano periodicamente il server (si registrano e chiedono). È meno complesso lato server ma c'è più rischio di drift temporaneo.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "configuration_management"
     },
     {
         "id": "form-002",
@@ -2046,7 +2138,8 @@
             "Version Control"
         ],
         "explanation": "Il flusso corretto in Git è: Working Directory, poi 'git add' verso la Staging Area, poi 'git commit' verso il Repository locale.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "vcs_git"
     },
     {
         "id": "form-083",
@@ -2068,7 +2161,8 @@
             "Testing"
         ],
         "explanation": "Nella Continuous Delivery il rilascio in produzione è MANUALMENTE innescato ('su richiesta'). Il rilascio totalmente automatico è la Continuous Deployment.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "ci_cd_artifacts"
     },
     {
         "id": "form-080",
@@ -2094,7 +2188,8 @@
             "Infrastruttura"
         ],
         "explanation": "Le VM permettono di far girare più sistemi operativi sullo stesso hardware isolando gli ambienti, ma sprecando risorse e con deploy lenti.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "virtualization_containers"
     },
     {
         "id": "form-062",
@@ -2112,7 +2207,8 @@
             "Configuration Management"
         ],
         "explanation": "Il CM è la pratica per garantire che l'ambiente e le specifiche tecniche siano costantemente coerenti per tutta la vita del prodotto.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "configuration_management"
     },
     {
         "question": "Quali sono i componenti di input e output in un processo di build",
@@ -2131,7 +2227,8 @@
         ],
         "explanation": "Il processo di build prende in input tutto il necessario per produrre il software (sorgenti, file di build come pom.xml/Makefile, librerie, test) e produce in output gli artefatti distribuibili (documentazione generata, il prodotto compilato/packaged, librerie pubblicate).",
         "id": "local-011",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "virtualization_containers"
     },
     {
         "id": "form-014",
@@ -2149,7 +2246,8 @@
             "Testing"
         ],
         "explanation": "Durante il test, i sub-system da integrare possono essere sia interni (es. moduli del software) che esterni (es. Database o API terze).",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-028",
@@ -2181,7 +2279,8 @@
             "Project Management"
         ],
         "explanation": "Il Capo Progetto/Product Owner usa l'ITS per creare il progetto, definire i rilasci, le priorità, e monitorare l'andamento globale.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "id": "form-094",
@@ -2204,7 +2303,8 @@
             "Testing"
         ],
         "explanation": "I test di accettazione verificano i requisiti utente e il sistema nel suo complesso, quindi sono dinamici, funzionali e in modalità black-box.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "id": "form-005",
@@ -2224,7 +2324,8 @@
             "Build Tools"
         ],
         "explanation": "CRISP in ambito build sta per: Completo, Ripetibile, Informativo, Schedulabile e Portabile.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "build_maven"
     },
     {
         "question": "Per cosa sta ISTQB",
@@ -2243,7 +2344,8 @@
         ],
         "explanation": "Testo estratto direttamente dal file Word.",
         "id": "word-imported-68a355",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "testing_static_unit"
     },
     {
         "question": "Quale evento del framework SCRUM: Si celebra dopo la Sprint Review e prima del prossimo Sprint Planning",
@@ -2261,7 +2363,8 @@
         ],
         "explanation": "La Sprint Retrospective è l'ultimo evento dello sprint: il team riflette sui processi, strumenti e relazioni interni per migliorare continuamente. Avviene dopo la Sprint Review (che guarda il prodotto) e prima del nuovo Sprint Planning.",
         "id": "local-003",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "id": "form-096",
@@ -2281,7 +2384,8 @@
             "Project Management"
         ],
         "explanation": "La Sprint Review è l'evento di ispezione a fine sprint dove il team mostra il lavoro finito (l'incremento) per riceverne l'accettazione.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "its_scrum"
     },
     {
         "question": "Quali tra queste sono caratteristiche di Jenkins",
@@ -2310,7 +2414,8 @@
         ],
         "explanation": "Jenkins è un server CI/CD open source adatto a progetti complessi: usa il Jenkinsfile (Groovy DSL) per la configurazione, supporta agent distribuiti per esecuzioni parallele su infrastrutture di calcolo distribuite, e si integra con quasi tutti i VCS tramite plugin.",
         "id": "local-010",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "vcs_git"
     },
     {
         "id": "form-006",
@@ -2331,7 +2436,8 @@
             "Version Control"
         ],
         "explanation": "'Added' non è uno stato formale base; il ciclo standard Git è Untracked -> Staged -> Committed, oppure Modified -> Staged.",
-        "section": "vecchio"
+        "section": "vecchio",
+        "category": "vcs_git"
     },
     {
         "id": "mtss_star_008",
@@ -2370,7 +2476,8 @@
             "Configuration Management e Ansible"
         ],
         "explanation": "Risposta corretta: un computer con Ansible installato può fare da controller; un handler agisce in conseguenza ad un evento task; Un controller può lanciare comandi sulle macchine gestite; i playbook sono scritti in YAML; è leggero; i playbook sono insiemi di task e handler; per Linux richiede Phyton>2.6 e SSH; la singola unità è detta task; i server presso cui ansible può operare sono in una lista chiamata inventory.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "configuration_management"
     },
     {
         "id": "mtss_star_010",
@@ -2395,7 +2502,8 @@
             "Virtualizzazione, container e infrastruttura"
         ],
         "explanation": "Risposta corretta: costoso; è complicato ospitare più applicazioni sullo stesso sistema operativo; spreca risorse; tempi di deploy lenti.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "virtualization_containers"
     },
     {
         "id": "mtss_off_011",
@@ -2416,7 +2524,8 @@
             "Software testing, unit testing e analisi statica"
         ],
         "explanation": "Risposta corretta: 3-1-2.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "testing_static_unit"
     },
     {
         "id": "mtss_star_012",
@@ -2445,7 +2554,8 @@
             "Virtualizzazione, container e infrastruttura"
         ],
         "explanation": "Risposta corretta: non necessita di un hypervisor; i container sono isolati tra loro e anche dall'host stesso; gira nel kernel della macchina host; è più veloce delle VM; è un'istanza di esecuzione di un'applicazione completamente isolata; virtualizza il sistema operativo.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "virtualization_containers"
     },
     {
         "id": "mtss_star_015",
@@ -2479,7 +2589,8 @@
             "Issue Tracking System, project management e Scrum"
         ],
         "explanation": "Risposta corretta: relativo ad un progetto; diverse priorità; attività minima del progetto; presenta informazioni sulle date (apertura, possibile rilascio); diverse tipologie; presenta stati; codice univoco (inteso come ID); presenta stime in tempo.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "its_scrum"
     },
     {
         "id": "mtss_off_025",
@@ -2498,7 +2609,8 @@
             "Build automation, Maven e repository"
         ],
         "explanation": "Risposta corretta: creazione automatica di un software distribuibile tramite: compilazione del codice sorgente, il packaging dei file binari e l'esecuzione di test.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "build_maven"
     },
     {
         "id": "mtss_off_033",
@@ -2517,7 +2629,8 @@
             "Issue Tracking System, project management e Scrum"
         ],
         "explanation": "Risposta corretta: sprint review.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "its_scrum"
     },
     {
         "id": "mtss_off_037",
@@ -2535,7 +2648,8 @@
             "Configuration Management e Ansible"
         ],
         "explanation": "Risposta corretta: vedere  le dipendenze utilizzate per creare un ambiente e confrontare due versioni diverse di uno stesso ambiente per vederne le differenze.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "configuration_management"
     },
     {
         "id": "mtss_off_045",
@@ -2553,7 +2667,8 @@
             "Issue Tracking System, project management e Scrum"
         ],
         "explanation": "Risposta corretta: del codice - dallo sviluppatore.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "its_scrum"
     },
     {
         "id": "mtss_star_048",
@@ -2578,7 +2693,8 @@
             "Configuration Management e Ansible"
         ],
         "explanation": "Risposta corretta: è lento; viene costruita una nuova immagine ad ogni aggiornamento di configurazione; si riduce il rischio di drift.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "configuration_management"
     },
     {
         "id": "mtss_star_052",
@@ -2602,7 +2718,8 @@
             "Virtualizzazione, container e infrastruttura"
         ],
         "explanation": "Risposta corretta: permette di monitorare continuamente lo stato di ogni VM; centralizza il controllo su tutte le VM esistenti; dimensiona ogni VM con le risorse necessarie; crea e configura VM.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "virtualization_containers"
     },
     {
         "id": "mtss_off_059",
@@ -2620,7 +2737,8 @@
             "Issue Tracking System, project management e Scrum"
         ],
         "explanation": "Risposta corretta: Sprint retrospective.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "its_scrum"
     },
     {
         "id": "mtss_star_066",
@@ -2639,7 +2757,8 @@
             "Virtualizzazione, container e infrastruttura"
         ],
         "explanation": "Risposta corretta: input: file di build, codice di produzione, documentazione, librerie, codice di test. Output: documentazione, prodotto, librerie.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "virtualization_containers"
     },
     {
         "id": "mtss_star_068",
@@ -2668,7 +2787,8 @@
             "Continuous Integration, Delivery e artifact repository"
         ],
         "explanation": "Risposta corretta: viene configurato con jankinsfile; si integra con vari sistemi di controllo del codice sorgente; consente esecuzioni parallele sfruttando infrastrutture di calcolo distribuite; adatto a progetti complessi; è scalabile orizzontalmente con nodi di build distribuiti e configurazione personalizzata delle risorse.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "ci_cd_artifacts"
     },
     {
         "id": "mtss_star_075",
@@ -2687,7 +2807,8 @@
             "Build automation, Maven e repository"
         ],
         "explanation": "Risposta corretta: Le librerie scaricate da repository remoti sono sempre sicure e verificate.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "build_maven"
     },
     {
         "id": "mtss_star_080",
@@ -2707,7 +2828,8 @@
             "Issue Tracking System, project management e Scrum"
         ],
         "explanation": "Risposta corretta: insieme di stati e transazioni che un work item attraversa durante il suo ciclo di vita; permette di implementare un processo da seguire per completare l'attività rappresentata da un work item.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "its_scrum"
     },
     {
         "id": "mtss_appello_open_001",
@@ -2719,7 +2841,8 @@
             "Issue Tracking System, project management e Scrum"
         ],
         "explanation": "",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "its_scrum"
     },
     {
         "id": "mtss_appello_open_002",
@@ -2731,7 +2854,8 @@
             "Configuration Management e Ansible"
         ],
         "explanation": "",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "configuration_management"
     },
     {
         "id": "mtss_appello_open_003",
@@ -2743,7 +2867,8 @@
             "Software testing, unit testing e analisi statica"
         ],
         "explanation": "",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "testing_static_unit"
     },
     {
         "id": "mtss_appello_open_004",
@@ -2755,7 +2880,8 @@
             "Version Control System e Git"
         ],
         "explanation": "",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "vcs_git"
     },
     {
         "id": "mtss_appello_open_005",
@@ -2767,7 +2893,8 @@
             "Continuous Integration, Delivery e artifact repository"
         ],
         "explanation": "",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "ci_cd_artifacts"
     },
     {
         "id": "mtss_appello_open_006",
@@ -2779,7 +2906,8 @@
             "Software testing, unit testing e analisi statica"
         ],
         "explanation": "",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "testing_static_unit"
     },
     {
         "id": "mtss_appello_open_007",
@@ -2791,7 +2919,8 @@
             "Software testing, unit testing e analisi statica"
         ],
         "explanation": "",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "testing_static_unit"
     },
     {
         "id": "mtss_appello_open_008",
@@ -2803,7 +2932,8 @@
             "Version Control System e Git"
         ],
         "explanation": "",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "vcs_git"
     },
     {
         "id": "mtss_appello_open_009",
@@ -2815,7 +2945,8 @@
             "Continuous Integration, Delivery e artifact repository"
         ],
         "explanation": "",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "ci_cd_artifacts"
     },
     {
         "id": "mtss_appello_open_010",
@@ -2827,7 +2958,8 @@
             "Build automation, Maven e repository"
         ],
         "explanation": "",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "build_maven"
     },
     {
         "id": "mtss_appello_open_011",
@@ -2839,7 +2971,8 @@
             "Software testing, unit testing e analisi statica"
         ],
         "explanation": "",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "testing_static_unit"
     },
     {
         "id": "mtss_pred_001",
@@ -2860,7 +2993,8 @@
             "Issue Tracking System, project management e Scrum"
         ],
         "explanation": "Risposta corretta: raggruppa issue legate ad un obiettivo o una release; permette di associare una scadenza o un tempo limite alle issue.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "its_scrum"
     },
     {
         "id": "mtss_pred_002",
@@ -2879,7 +3013,8 @@
             "Issue Tracking System, project management e Scrum"
         ],
         "explanation": "Risposta corretta: insieme di stati e transizioni attraversati da un work item durante il suo ciclo di vita.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "its_scrum"
     },
     {
         "id": "mtss_pred_003",
@@ -2904,7 +3039,8 @@
             "Issue Tracking System, project management e Scrum"
         ],
         "explanation": "Risposta corretta: stato nel workflow; priorità; stima originaria o stima a finire; data di apertura o ultimo aggiornamento.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "its_scrum"
     },
     {
         "id": "mtss_pred_004",
@@ -2923,7 +3059,8 @@
             "Issue Tracking System, project management e Scrum"
         ],
         "explanation": "Risposta corretta: in GitHub il workflow delle issue è più semplice e non viene personalizzato come in strumenti tipo Jira.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "its_scrum"
     },
     {
         "id": "mtss_pred_005",
@@ -2947,7 +3084,8 @@
             "Issue Tracking System, project management e Scrum"
         ],
         "explanation": "Risposta corretta: trasparenza; ispezione; adattamento.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "its_scrum"
     },
     {
         "id": "mtss_pred_006",
@@ -2966,7 +3104,8 @@
             "Issue Tracking System, project management e Scrum"
         ],
         "explanation": "Risposta corretta: è accountable per massimizzare il valore del prodotto e gestire efficacemente il Product Backlog.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "its_scrum"
     },
     {
         "id": "mtss_pred_007",
@@ -2989,7 +3128,8 @@
             "Issue Tracking System, project management e Scrum"
         ],
         "explanation": "Risposta corretta: Sprint Goal; Product Backlog items selezionati per lo Sprint; piano per consegnare l’Increment.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "its_scrum"
     },
     {
         "id": "mtss_pred_008",
@@ -3008,7 +3148,8 @@
             "Issue Tracking System, project management e Scrum"
         ],
         "explanation": "Risposta corretta: serve a ispezionare il progresso verso lo Sprint Goal e adattare lo Sprint Backlog se necessario.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "its_scrum"
     },
     {
         "id": "mtss_pred_009",
@@ -3027,7 +3168,8 @@
             "Issue Tracking System, project management e Scrum"
         ],
         "explanation": "Risposta corretta: se un Product Backlog item non soddisfa la Definition of Done, non può essere considerato parte dell’Increment.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "its_scrum"
     },
     {
         "id": "mtss_pred_010",
@@ -3052,7 +3194,8 @@
             "Version Control System e Git"
         ],
         "explanation": "Risposta corretta: centralized workflow; feature branch workflow; Gitflow workflow; forking workflow.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "vcs_git"
     },
     {
         "id": "mtss_pred_011",
@@ -3071,7 +3214,8 @@
             "Version Control System e Git"
         ],
         "explanation": "Risposta corretta: feature branch workflow.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "vcs_git"
     },
     {
         "id": "mtss_pred_012",
@@ -3090,7 +3234,8 @@
             "Version Control System e Git"
         ],
         "explanation": "Risposta corretta: forking workflow.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "vcs_git"
     },
     {
         "id": "mtss_pred_013",
@@ -3113,7 +3258,8 @@
             "Version Control System e Git"
         ],
         "explanation": "Risposta corretta: il version database è distribuito; ogni clone può contenere la storia del repository; permette workflow non possibili o meno naturali nei CVCS.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "vcs_git"
     },
     {
         "id": "mtss_pred_014",
@@ -3132,7 +3278,8 @@
             "Version Control System e Git"
         ],
         "explanation": "Risposta corretta: git diff --cached.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "vcs_git"
     },
     {
         "id": "mtss_pred_015",
@@ -3151,7 +3298,8 @@
             "Version Control System e Git"
         ],
         "explanation": "Risposta corretta: git restore --staged README.md.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "vcs_git"
     },
     {
         "id": "mtss_pred_016",
@@ -3174,7 +3322,8 @@
             "Version Control System e Git"
         ],
         "explanation": "Risposta corretta: git fetch recupera dati dal remoto senza aggiornare direttamente la working copy; git pull recupera dal remoto e integra nella working copy; git push invia modifiche verso il repository remoto.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "vcs_git"
     },
     {
         "id": "mtss_pred_017",
@@ -3193,7 +3342,8 @@
             "Version Control System e Git"
         ],
         "explanation": "Risposta corretta: come una sequenza di snapshot del filesystem del progetto.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "vcs_git"
     },
     {
         "id": "mtss_pred_018",
@@ -3212,7 +3362,8 @@
             "Build automation, Maven e repository"
         ],
         "explanation": "Risposta corretta: una build-automation utility esegue il processo di build, un build-automation server la lancia su base schedulata o triggerata.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "build_maven"
     },
     {
         "id": "mtss_pred_019",
@@ -3240,7 +3391,8 @@
             "Build automation, Maven e repository"
         ],
         "explanation": "Risposta corretta: default; clean; site.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "build_maven"
     },
     {
         "id": "mtss_pred_020",
@@ -3272,7 +3424,8 @@
             "Build automation, Maven e repository"
         ],
         "explanation": "Risposta corretta: validate; compile; test; package; verify; install; deploy.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "build_maven"
     },
     {
         "id": "mtss_pred_021",
@@ -3291,7 +3444,8 @@
             "Build automation, Maven e repository"
         ],
         "explanation": "Risposta corretta: toolkit/template per generare progetti Maven parametrizzati a partire da un modello.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "build_maven"
     },
     {
         "id": "mtss_pred_022",
@@ -3310,7 +3464,8 @@
             "Build automation, Maven e repository"
         ],
         "explanation": "Risposta corretta: i plugin forniscono goal eseguibili e un Mojo è una unità/goal implementata da un plugin.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "build_maven"
     },
     {
         "id": "mtss_pred_023",
@@ -3329,7 +3484,8 @@
             "Build automation, Maven e repository"
         ],
         "explanation": "Risposta corretta: per eseguire l’analisi statica durante il lifecycle di build prima delle fasi successive.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "build_maven"
     },
     {
         "id": "mtss_pred_024",
@@ -3354,7 +3510,8 @@
             "Build automation, Maven e repository"
         ],
         "explanation": "Risposta corretta: coordinate del progetto come groupId, artifactId e version; dipendenze del progetto; plugin e configurazioni di build; profili di compilazione.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "build_maven"
     },
     {
         "id": "mtss_pred_025",
@@ -3379,7 +3536,8 @@
             "Software testing, unit testing e analisi statica"
         ],
         "explanation": "Risposta corretta: sono anche conosciuti come UAT o End User Testing; sono relativi agli use case e ai requisiti concordati con utente finale o cliente; vengono svolti con l’utente finale o cliente; testano il SUT nel suo complesso.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "testing_static_unit"
     },
     {
         "id": "mtss_pred_026",
@@ -3409,7 +3567,8 @@
             "Software testing, unit testing e analisi statica"
         ],
         "explanation": "Risposta corretta: test planning; test analysis; test design; test implementation; test execution; test closure.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "testing_static_unit"
     },
     {
         "id": "mtss_pred_027",
@@ -3432,7 +3591,8 @@
             "Software testing, unit testing e analisi statica"
         ],
         "explanation": "Risposta corretta: non dipendere da risorse esterne non gestite dal progetto; usare fixture o sostituti controllati quando servono dipendenze; poter essere eseguiti automaticamente più volte con lo stesso risultato atteso.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "testing_static_unit"
     },
     {
         "id": "mtss_pred_028",
@@ -3455,7 +3615,8 @@
             "Software testing, unit testing e analisi statica"
         ],
         "explanation": "Risposta corretta: annotations per configurare l’ambiente di esecuzione del test; suite o categories per selezionare test da eseguire; assertions per confrontare risultati attesi e prodotti.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "testing_static_unit"
     },
     {
         "id": "mtss_pred_029",
@@ -3474,7 +3635,8 @@
             "Software testing, unit testing e analisi statica"
         ],
         "explanation": "Risposta corretta: scrivere un test che fallisce, scrivere il codice minimo per farlo passare, rifattorizzare mantenendo i test verdi.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "testing_static_unit"
     },
     {
         "id": "mtss_pred_030",
@@ -3493,7 +3655,8 @@
             "Software testing, unit testing e analisi statica"
         ],
         "explanation": "Risposta corretta: Conformance, Ordering, Range, Reference, Existence, Cardinality, Time.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "testing_static_unit"
     },
     {
         "id": "mtss_pred_031",
@@ -3519,7 +3682,8 @@
             "Software testing, unit testing e analisi statica"
         ],
         "explanation": "Risposta corretta: Checkstyle; SpotBugs o FindBugs; PMD; SonarQube.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "testing_static_unit"
     },
     {
         "id": "mtss_pred_032",
@@ -3542,7 +3706,8 @@
             "Software testing, unit testing e analisi statica"
         ],
         "explanation": "Risposta corretta: storicizza metriche e andamento della qualità; supporta continuous code inspection; può integrarsi con Maven e strumenti di Continuous Integration.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "testing_static_unit"
     },
     {
         "id": "mtss_pred_033",
@@ -3569,7 +3734,8 @@
             "Continuous Integration, Delivery e artifact repository"
         ],
         "explanation": "Risposta corretta: integrare frequentemente gli sviluppi; creare una automated test suite; avere un processo di build and test breve; fixare subito una build in errore; rendere visibile a tutti lo stato del progetto.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "ci_cd_artifacts"
     },
     {
         "id": "mtss_pred_034",
@@ -3599,7 +3765,8 @@
             "Continuous Integration, Delivery e artifact repository"
         ],
         "explanation": "Risposta corretta: workflow; events; jobs; steps; actions; runners.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "ci_cd_artifacts"
     },
     {
         "id": "mtss_pred_035",
@@ -3618,7 +3785,8 @@
             "Continuous Integration, Delivery e artifact repository"
         ],
         "explanation": "Risposta corretta: il tipo di runner su cui viene eseguito il job.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "ci_cd_artifacts"
     },
     {
         "id": "mtss_pred_036",
@@ -3637,7 +3805,8 @@
             "Continuous Integration, Delivery e artifact repository"
         ],
         "explanation": "Risposta corretta: modalità non interattiva.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "ci_cd_artifacts"
     },
     {
         "id": "mtss_pred_037",
@@ -3660,7 +3829,8 @@
             "Continuous Integration, Delivery e artifact repository"
         ],
         "explanation": "Risposta corretta: checkout del codice con actions/checkout; setup della JDK con actions/setup-java; build con Maven tramite mvn install.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "ci_cd_artifacts"
     },
     {
         "id": "mtss_pred_038",
@@ -3684,7 +3854,8 @@
             "Continuous Integration, Delivery e artifact repository"
         ],
         "explanation": "Risposta corretta: i proxy remote repositories possono recuperare artefatti da repository esterni; gli hosted internal repositories possono condividere artefatti interni o di terze parti; gli snapshot artifacts possono essere rilasciati più volte durante lo sviluppo; i release artifacts solitamente vengono rilasciati una sola volta e mantenuti.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "ci_cd_artifacts"
     },
     {
         "id": "mtss_pred_039",
@@ -3703,7 +3874,8 @@
             "Continuous Integration, Delivery e artifact repository"
         ],
         "explanation": "Risposta corretta: mantenere un riferimento al commit nel VCS da cui l’artefatto è stato creato.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "ci_cd_artifacts"
     },
     {
         "id": "mtss_pred_040",
@@ -3724,7 +3896,8 @@
             "Continuous Integration, Delivery e artifact repository"
         ],
         "explanation": "Risposta corretta: nella Continuous Delivery il software è rilasciabile in produzione in qualsiasi momento; nella Continuous Deployment le modifiche che superano i test automatizzati vengono passate automaticamente in produzione.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "ci_cd_artifacts"
     },
     {
         "id": "mtss_pred_041",
@@ -3749,7 +3922,8 @@
             "Continuous Integration, Delivery e artifact repository"
         ],
         "explanation": "Risposta corretta: Only Build Your Binaries Once; Deploy the Same Way to Every Environment; Smoke-Test Your Deployments; Deploy into a Copy of Production.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "ci_cd_artifacts"
     },
     {
         "id": "mtss_pred_042",
@@ -3768,7 +3942,8 @@
             "Continuous Integration, Delivery e artifact repository"
         ],
         "explanation": "Risposta corretta: esecuzione di test automatici in ogni fase della deployment pipeline per fornire feedback immediato.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "ci_cd_artifacts"
     },
     {
         "id": "mtss_pred_043",
@@ -3787,7 +3962,8 @@
             "Configuration Management e Ansible"
         ],
         "explanation": "Risposta corretta: unità di configurazione gestibile individualmente, come server, software, router o servizio.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "configuration_management"
     },
     {
         "id": "mtss_pred_044",
@@ -3806,7 +3982,8 @@
             "Configuration Management e Ansible"
         ],
         "explanation": "Risposta corretta: tracciare Configuration Item e relazioni tra loro.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "configuration_management"
     },
     {
         "id": "mtss_pred_045",
@@ -3833,7 +4010,8 @@
             "Configuration Management e Ansible"
         ],
         "explanation": "Risposta corretta: git e branch; package manager e build manager; orchestration and configuration tools; testing and compliance; inventory e configuration scripts.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "configuration_management"
     },
     {
         "id": "mtss_pred_046",
@@ -3860,7 +4038,8 @@
             "Configuration Management e Ansible"
         ],
         "explanation": "Risposta corretta: strumento di Configuration Management e IT Automation; agentless; idempotente; leggero e performante; approccio graduale tramite script e playbook.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "configuration_management"
     },
     {
         "id": "mtss_pred_047",
@@ -3892,7 +4071,8 @@
             "Configuration Management e Ansible"
         ],
         "explanation": "Risposta corretta: Control Node; Managed Nodes; Inventory; Tasks; Handlers; Playbooks; Modules.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "configuration_management"
     },
     {
         "id": "mtss_pred_048",
@@ -3911,7 +4091,8 @@
             "Configuration Management e Ansible"
         ],
         "explanation": "Risposta corretta: vengono eseguiti quando un task notifica una modifica, ad esempio per riavviare un servizio solo se cambia la configurazione.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "configuration_management"
     },
     {
         "id": "mtss_pred_049",
@@ -3930,7 +4111,8 @@
             "Configuration Management e Ansible"
         ],
         "explanation": "Risposta corretta: ansible-playbook.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "configuration_management"
     },
     {
         "id": "mtss_pred_050",
@@ -3949,7 +4131,8 @@
             "Configuration Management e Ansible"
         ],
         "explanation": "Risposta corretta: -i.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "configuration_management"
     },
     {
         "id": "mtss_pred_051",
@@ -3970,7 +4153,8 @@
             "Configuration Management e Ansible"
         ],
         "explanation": "Risposta corretta: la living infrastructure mantiene la stessa istanza dedicata aggiornandola nel tempo; la immutable infrastructure distribuisce una nuova istanza read-only/configurata invece di modificare quella esistente.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "configuration_management"
     },
     {
         "id": "mtss_pred_052",
@@ -3995,7 +4179,8 @@
             "Virtualizzazione, container e infrastruttura"
         ],
         "explanation": "Risposta corretta: è un processo isolato con i file necessari per eseguire l’applicazione; condivide il kernel dell’host con altri container; è portabile tra ambienti; è gestibile indipendentemente dagli altri container.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "virtualization_containers"
     },
     {
         "id": "mtss_pred_053",
@@ -4014,7 +4199,8 @@
             "Virtualizzazione, container e infrastruttura"
         ],
         "explanation": "Risposta corretta: una VM include un intero sistema operativo con kernel e driver, mentre un container è un processo isolato che condivide il kernel dell’host.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "virtualization_containers"
     },
     {
         "id": "mtss_pred_054",
@@ -4037,7 +4223,8 @@
             "Virtualizzazione, container e infrastruttura"
         ],
         "explanation": "Risposta corretta: un’immagine è un template da cui avviare container; un registry conserva e distribuisce immagini; Docker Hub è un esempio di registry.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "virtualization_containers"
     },
     {
         "id": "mtss_pred_055",
@@ -4056,7 +4243,8 @@
             "Virtualizzazione, container e infrastruttura"
         ],
         "explanation": "Risposta corretta: coordinare deployment, scheduling, scaling, networking e recupero da guasti di container su più nodi.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "virtualization_containers"
     },
     {
         "id": "mtss_pred_056",
@@ -4075,6 +4263,7 @@
             "Virtualizzazione, container e infrastruttura"
         ],
         "explanation": "Risposta corretta: è una tecnologia di orchestrazione nativa di Docker.",
-        "section": "nuovo"
+        "section": "nuovo",
+        "category": "virtualization_containers"
     }
 ]
