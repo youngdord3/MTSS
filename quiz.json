@@ -659,18 +659,40 @@
         "section": "vecchio"
     },
     {
-        "id": "form-034",
+        "id": "form-034-a",
+        "question": "Quale delle seguenti voci NON è una fase del Build Lifecycle default di Maven:",
+        "options": [
+            "compile",
+            "validate",
+            "test",
+            "launch",
+            "verify",
+            "package",
+            "deploy",
+            "install"
+        ],
+        "correct": [
+            3
+        ],
+        "multiple": false,
+        "tags": [
+            "Build Tools"
+        ],
+        "explanation": "",
+        "section": "vecchio"
+    },
+    {
+        "id": "form-034-b",
         "question": "Quale delle seguenti voci NON è un lifecycle predefinito in Maven",
         "options": [
             "default",
             "clean",
             "site",
-            "verify [CORRETTA: launch - in base alla correzione indicata]",
-            "package",
-            "deploy",
-            "install"
+            "verify"
         ],
-        "correct": [],
+        "correct": [
+            3
+        ],
         "multiple": false,
         "tags": [
             "Build Tools"
